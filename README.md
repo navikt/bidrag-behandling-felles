@@ -1,2 +1,11 @@
 # bidrag-behandling-felles
+
+![](https://github.com/navikt/bidrag-behandling-felles/workflows/maven%20deploy/badge.svg)
+
 Inneholder enums/konstanter og funksjonalitet som er felles for flere repositories ifbm behandling av bidrag
+
+## release endringer
+
+versjon | endringstype      | beskrivelse
+--------|-------------------|------------------------
+0.0.1   | Opprettet         | Initiell versjon
