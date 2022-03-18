@@ -9,3 +9,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 versjon | endringstype      | beskrivelse
 --------|-------------------|------------------------
 0.0.1   | Opprettet         | Initiell versjon
+0.0.2   | Endret            | Ingen endring. Test av opplasting til Nexus
