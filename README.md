@@ -6,9 +6,10 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 
 ## release endringer
 
-versjon | endringstype      | beskrivelse
---------|-------------------|------------------------
-0.0.1   | Opprettet         | Initiell versjon
-0.0.2   | Endret            | Ingen endring. Test av opplasting til Nexus
-0.0.3   | Endret            | Lagt til GrunnlagType enum.
-0.0.4   | Endret            | Lagt til VedtakType-enum.
+| versjon | endringstype | beskrivelse                                 |
+|---------|--------------|---------------------------------------------|
+| 0.0.1   | Opprettet    | Initiell versjon                            |
+| 0.0.2   | Endret       | Ingen endring. Test av opplasting til Nexus |
+| 0.0.3   | Endret       | Lagt til GrunnlagType enum.                 |
+| 0.0.4   | Endret       | Lagt til VedtakType-enum.                   |
+| 0.0.5   | Endret       | Lagt til SivilstandKode-enum.               |
