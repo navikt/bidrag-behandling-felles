@@ -1,6 +1,7 @@
 package no.nav.bidrag.behandling.felles.enums
 
 import java.time.LocalDate
+import java.util.Arrays
 
 enum class InntektType(val beskrivelse: String, val belopstype: String, val gruppe: String, val maaVelges: Boolean, val forskudd: Boolean,
                        val bidrag: Boolean, val saertilskudd: Boolean, val bidragspliktig: Boolean, val bidragsmottaker: Boolean, val soknadsbarn: Boolean,
@@ -67,5 +68,13 @@ enum class InntektType(val beskrivelse: String, val belopstype: String, val grup
   UTVIDET_BARNETRYGD("Utvidet barnetrygd", "UBAT", "BMC",
     true, true, true, true, false, true, false, LocalDate.MIN, LocalDate.MAX),
   FORDEL_SKATTEKLASSE2("Fordel skatteklasse 2", "FS2", "C",
-    false, false, true, true, false, true, false, LocalDate.MIN, LocalDate.parse("2013-01-01"))
+    false, false, true, true, false, true, false, LocalDate.MIN, LocalDate.parse("2013-01-01"));
+
+  companion object {
+    fun getInntektTypeFromBelopstype(belopstype: String?): InntektType {
+      return Arrays.stream(values()).filter { inntektType -> inntektType.belopstype == belopstype }.findFirst().orElse(
+        INNTEKTSOPPLYSNINGER_ARBEIDSGIVER
+      )
+    }
+  }
 }
