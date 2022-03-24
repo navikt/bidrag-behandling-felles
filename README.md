@@ -13,4 +13,5 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.3   | Endret       | Lagt til GrunnlagType enum.                 |
 | 0.0.4   | Endret       | Lagt til VedtakType-enum.                   |
 | 0.0.5   | Endret       | Lagt til SivilstandKode-enum.               |
-| 0.0.6   | Endret       | Lagt til SaerfradragKode og BostatusKode.
+| 0.0.6   | Endret       | Lagt til SaerfradragKode og BostatusKode.   |
+| 0.0.7   | Endret       | Lagt til Sjablon-enums, AvvikType, InntektType og Rolle |
