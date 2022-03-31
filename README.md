@@ -16,3 +16,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.6   | Endret       | Lagt til SaerfradragKode og BostatusKode.   |
 | 0.0.7   | Endret       | Lagt til Sjablon-enums, AvvikType, InntektType og Rolle |
 | 0.0.8   | Endret       | Lagt til funksjon for å hente belopstype fra InntektType |
+| 0.0.9   | Endret       | Lagt til BOSTATUS_BP som GrunnlagType       |
