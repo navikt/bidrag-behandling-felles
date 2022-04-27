@@ -12,11 +12,11 @@ abstract class Periode<T>(
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   @JsonSerialize(using = LocalDateSerializer::class)
   @JsonDeserialize(using = LocalDateDeserializer::class)
-  val datoFom: LocalDate,
+  var datoFom: LocalDate,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   @JsonSerialize(using = LocalDateSerializer::class)
   @JsonDeserialize(using = LocalDateDeserializer::class)
-  val datoTil: LocalDate
+  var datoTil: LocalDate
 ) {
 
   override fun equals(other: Any?): Boolean {
