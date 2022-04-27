@@ -77,4 +77,11 @@ enum class InntektType(val beskrivelse: String, val belopstype: String, val grup
       )
     }
   }
+
+  object InntektTypeConstants {
+    const val SKATTEGRUNNLAG_SKE: String = "SKATTEGRUNNLAG_SKE"
+    const val KAPITALINNTEKT_SKE: String = "KAPITALINNTEKT_SKE"
+    const val LONN_TREKK: String = "LONN_TREKK"
+    const val AINNTEKT_KORRIGERT_BARNETILLEGG: String = "AINNTEKT_KORRIGERT_BARNETILLEGG"
+  }
 }
