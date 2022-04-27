@@ -20,3 +20,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.10  | Endret       | Lagt til diverse enums fra bidrag-grunnlag               |
 | 0.0.11  | Endret       | Lagt til enum EngangsbelopType for bidrag-vedtak         |                     
 | 0.0.12  | Endret       | Lagt til Grunnlag-klasser                                |
+| 0.0.13  | Endret       | Feltene datoFom og datoTil er gjort mutable i Periode    |
