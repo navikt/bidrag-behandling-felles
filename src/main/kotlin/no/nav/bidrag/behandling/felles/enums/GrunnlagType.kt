@@ -1,5 +1,8 @@
 package no.nav.bidrag.behandling.felles.enums
 
+/**
+ * Typer grunnlag som benyttes i beregning og vedtak
+ */
 enum class GrunnlagType(val value: String) {
   SAERFRADRAG(GrunnlagTypeConstants.SAERFRADRAG),
   SOKNADSBARN_INFO(GrunnlagTypeConstants.SOKNADSBARN_INFO),
