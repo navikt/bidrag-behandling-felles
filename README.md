@@ -22,4 +22,5 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.12  | Endret       | Lagt til Grunnlag-klasser                                |
 | 0.0.13  | Endret       | Feltene datoFom og datoTil er gjort mutable i Periode    |
 | 0.0.14  | Endret       | Lagt til GrunnlagRequestType-enum.                       |
-| 0.0.15  | Endret       | brukTil i Inntektgrunnlag nullable.                      |
+| 0.0.15  | Endret       | Rettet typo i BARNETILLEGG                               |
+| 0.0.16  | Endret       | brukTil i Inntektgrunnlag nullable.                      |
