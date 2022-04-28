@@ -73,7 +73,7 @@ class GrunnlagSerDesTest {
     val skatteklasse = Skatteklasse(1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val soknadsbarnInfo = SoknadsbarnInfo(1, "2020-01-25", "12345678910")
 
-    val inntekterInntektgrunnlag = listOf(Inntektgrunnlag("12345678910", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), true, LocalDateTime.now(), LocalDateTime.now(), LocalDateTime.now(), listOf(
+    val inntekterInntektgrunnlag = listOf(Inntektgrunnlag("12345678910", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), true, LocalDateTime.now(), null, LocalDateTime.now(), listOf(
       InntektgrunnlagPost("periode", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), "", "", "", "", "", BigDecimal.valueOf(25000), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     )))
     val inntekterSkattegrunnlag = listOf(Skattegrunnlag("12345678910", 2022, listOf(SkattegrunnlagPost(InntektType.SKATTEGRUNNLAG_SKE.name, BigDecimal.valueOf(15000)))))

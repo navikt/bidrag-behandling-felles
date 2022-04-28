@@ -2,7 +2,6 @@ package no.nav.bidrag.behandling.felles.grunnlag.inntekt
 
 import com.fasterxml.jackson.annotation.JsonFormat
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
-import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import java.time.LocalDate
 import java.time.LocalDateTime
 
@@ -15,7 +14,7 @@ class Inntektgrunnlag(
   val periodeTil: LocalDate,
   val aktiv: Boolean,
   val brukFra: LocalDateTime,
-  val brukTil: LocalDateTime,
+  val brukTil: LocalDateTime?,
   val hentetTidspunkt: LocalDateTime,
   val inntektgrunnlagPoster: List<InntektgrunnlagPost>
 ) :
