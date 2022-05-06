@@ -25,4 +25,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.15  | Endret       | Rettet typo i BARNETILLEGG                                      |
 | 0.0.16  | Endret       | brukTil i Inntektgrunnlag nullable.                             |
 | 0.0.17  | Endret       | Lagt til GrunnlagRequestTyper for kall til bidrag-person -> PDL |
-| 0.0.17  | Endret       | Rettet feil i enum                                              |
+| 0.0.18  | Endret       | Rettet feil i enum                                              |
