@@ -6,6 +6,7 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 
 ## release endringer
 
+
 | versjon | endringstype | beskrivelse                                                     |
 |---------|--------------|-----------------------------------------------------------------|
 | 0.0.1   | Opprettet    | Initiell versjon                                                |
@@ -26,3 +27,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.16  | Endret       | brukTil i Inntektgrunnlag nullable.                             |
 | 0.0.17  | Endret       | Lagt til GrunnlagRequestTyper for kall til bidrag-person -> PDL |
 | 0.0.18  | Endret       | Rettet feil i enum                                              |
+| 0.0.19  | Endret       | Utvidet EngangsbelopType-enum og justert SoknadsbarnInfo        |
