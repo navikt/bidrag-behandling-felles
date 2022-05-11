@@ -28,3 +28,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.17  | Endret       | Lagt til GrunnlagRequestTyper for kall til bidrag-person -> PDL |
 | 0.0.18  | Endret       | Rettet feil i enum                                              |
 | 0.0.19  | Endret       | Utvidet EngangsbelopType-enum og justert SoknadsbarnInfo        |
+| 0.0.20  | Endret       | Lagt til flere grunnlagRequestTyper                             |
