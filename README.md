@@ -29,3 +29,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.18  | Endret       | Rettet feil i enum                                              |
 | 0.0.19  | Endret       | Utvidet EngangsbelopType-enum og justert SoknadsbarnInfo        |
 | 0.0.20  | Endret       | Lagt til flere grunnlagRequestTyper                             |
+| 0.0.21  | Endret       | Rettet Equals logikk i grunnlaget BarnetilsynMedStonad          |

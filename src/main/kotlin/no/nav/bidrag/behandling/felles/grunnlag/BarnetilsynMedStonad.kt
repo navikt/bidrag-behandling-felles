@@ -12,7 +12,7 @@ class BarnetilsynMedStonad(
   Periode<BarnetilsynMedStonad>(datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
   override fun isEqualTo(other: BarnetilsynMedStonad): Boolean {
-    return soknadsbarnId == other.soknadsbarnId && stonadType == other.stonadType && tilsynType == other.stonadType
+    return soknadsbarnId == other.soknadsbarnId && stonadType == other.stonadType && tilsynType == other.tilsynType
   }
 
 }
