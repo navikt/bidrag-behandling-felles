@@ -31,3 +31,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.20  | Endret       | Lagt til flere grunnlagRequestTyper                             |
 | 0.0.21  | Endret       | Rettet Equals logikk i grunnlaget BarnetilsynMedStonad          |
 | 0.0.22  | Endret       | Endret enkelte felter til nullable i InntektsgrunnlagPost       |
+| 0.0.23  | Endret       | Utvidet equals-metode for sammenligning av inntekter            |
