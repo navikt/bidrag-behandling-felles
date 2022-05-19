@@ -5,21 +5,21 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class InntektgrunnlagPost(
-  val utbetalingsperiode: String,
+  val utbetalingsperiode: String?,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  val opptjeningsperiodeFra: LocalDate,
+  val opptjeningsperiodeFra: LocalDate?,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  val opptjeningsperiodeTil: LocalDate,
-  val opplysningspliktigId: String,
-  val virksomhetId: String,
+  val opptjeningsperiodeTil: LocalDate?,
+  val opplysningspliktigId: String?,
+  val virksomhetId: String?,
   val inntektType: String,
-  val fordelType: String,
-  val beskrivelse: String,
+  val fordelType: String?,
+  val beskrivelse: String?,
   val belop: BigDecimal,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  val etterbetalingsperiodeFra: LocalDate,
+  val etterbetalingsperiodeFra: LocalDate?,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  val etterbetalingsperiodeTil: LocalDate
+  val etterbetalingsperiodeTil: LocalDate?
 ) {
 
 }
