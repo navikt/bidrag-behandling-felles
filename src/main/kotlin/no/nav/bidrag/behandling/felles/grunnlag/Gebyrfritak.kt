@@ -9,9 +9,9 @@ class Gebyrfritak(
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   val soktDato: LocalDate,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  val vedtakDato: LocalDate,
+  val vedtakDato: LocalDate?,
   val innvilget: Boolean,
-  val kode: String,
+  val kode: String?,
   val grenseBelop: BigDecimal,
   val rolle: Rolle
 ) :
