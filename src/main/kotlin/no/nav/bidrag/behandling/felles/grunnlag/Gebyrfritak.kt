@@ -13,8 +13,8 @@ class Gebyrfritak(
   val innvilget: Boolean,
   val kode: String?,
   val grenseBelop: BigDecimal,
-  val rolle: Rolle
+  override val rolle: Rolle
 ) :
-  IGrunnlagInnhold {
+  IGrunnlagInnhold, IRolle {
 
 }

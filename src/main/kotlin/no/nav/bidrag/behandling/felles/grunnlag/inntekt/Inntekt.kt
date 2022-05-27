@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import no.nav.bidrag.behandling.felles.enums.InntektType
 import no.nav.bidrag.behandling.felles.enums.Rolle
 import no.nav.bidrag.behandling.felles.grunnlag.IGrunnlagInnhold
+import no.nav.bidrag.behandling.felles.grunnlag.IRolle
 import no.nav.bidrag.behandling.felles.grunnlag.Periode
 import no.nav.bidrag.behandling.felles.grunnlag.deserializer.InntektDeserializer
 import java.math.BigDecimal
@@ -12,7 +13,7 @@ import java.util.*
 
 
 open class Inntekt(
-  val rolle: Rolle,
+  override val rolle: Rolle,
   val inntektType: InntektType,
   val belop: BigDecimal,
   val valgt: Boolean,
@@ -21,7 +22,7 @@ open class Inntekt(
   @JsonDeserialize(contentUsing = InntektDeserializer::class)
   var inntekter: List<IInntektGrunnlag>
 ) :
-  Periode<Inntekt>(datoFom, datoTil), IGrunnlagInnhold {
+  Periode<Inntekt>(datoFom, datoTil), IGrunnlagInnhold, IRolle {
 
   override fun equals(o: Any?): Boolean {
     if (this === o) return true
