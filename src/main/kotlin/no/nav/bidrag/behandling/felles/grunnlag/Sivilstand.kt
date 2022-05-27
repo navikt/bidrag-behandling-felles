@@ -5,13 +5,13 @@ import no.nav.bidrag.behandling.felles.enums.SivilstandKode
 import java.time.LocalDate
 
 class Sivilstand(
-  val rolle: Rolle,
+  override val rolle: Rolle,
   datoFom: LocalDate,
   datoTil: LocalDate,
   val sivilstandKode: SivilstandKode,
   val beskrivelse: String
 ) :
-  Periode<Sivilstand>(datoFom, datoTil), IGrunnlagInnhold {
+  Periode<Sivilstand>(datoFom, datoTil), IGrunnlagInnhold, IRolle {
 
   override fun isEqualTo(other: Sivilstand): Boolean {
     return rolle == other.rolle && sivilstandKode == other.sivilstandKode && beskrivelse == other.beskrivelse
