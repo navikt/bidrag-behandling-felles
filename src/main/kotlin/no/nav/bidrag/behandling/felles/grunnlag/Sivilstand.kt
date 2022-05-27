@@ -9,13 +9,12 @@ class Sivilstand(
   datoFom: LocalDate,
   datoTil: LocalDate,
   val sivilstandKode: SivilstandKode,
-  val beskrivelse: String,
-  override val soknadsbarnId: Int
+  val beskrivelse: String
 ) :
-  Periode<Sivilstand>(datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
+  Periode<Sivilstand>(datoFom, datoTil), IGrunnlagInnhold {
 
   override fun isEqualTo(other: Sivilstand): Boolean {
-    return rolle == other.rolle && sivilstandKode == other.sivilstandKode && soknadsbarnId == other.soknadsbarnId && beskrivelse == other.beskrivelse
+    return rolle == other.rolle && sivilstandKode == other.sivilstandKode && beskrivelse == other.beskrivelse
   }
 
 }
