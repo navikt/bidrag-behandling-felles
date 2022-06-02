@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer
 import java.time.LocalDate
-import java.util.Objects
+import java.util.*
 
 abstract class Periode<T>(
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -16,7 +16,7 @@ abstract class Periode<T>(
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   @JsonSerialize(using = LocalDateSerializer::class)
   @JsonDeserialize(using = LocalDateDeserializer::class)
-  var datoTil: LocalDate
+  var datoTil: LocalDate?
 ) {
 
   override fun equals(other: Any?): Boolean {

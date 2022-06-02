@@ -12,7 +12,7 @@ class BPsAndelUnderholdskostnad(
   val isSelvforsorget: Boolean,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Delberegning<BPsAndelUnderholdskostnad>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 

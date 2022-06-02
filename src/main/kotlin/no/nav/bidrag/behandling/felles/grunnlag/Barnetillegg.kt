@@ -10,7 +10,7 @@ class Barnetillegg(
   val bruttoBelop: BigDecimal,
   val skattProsent: BigDecimal,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Periode<Barnetillegg>(datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn, IRolle {
 

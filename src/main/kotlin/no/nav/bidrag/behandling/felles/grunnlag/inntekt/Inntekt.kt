@@ -18,7 +18,7 @@ open class Inntekt(
   val belop: BigDecimal,
   val valgt: Boolean,
   datoFom: LocalDate,
-  datoTil: LocalDate,
+  datoTil: LocalDate?,
   @JsonDeserialize(contentUsing = InntektDeserializer::class)
   var inntekter: List<IInntektGrunnlag>
 ) :

@@ -13,7 +13,7 @@ class InntektBarn(
   belop: BigDecimal,
   valgt: Boolean,
   datoFom: LocalDate,
-  datoTil: LocalDate,
+  datoTil: LocalDate?,
   inntekter: List<IInntektGrunnlag>
 ) :
   Inntekt(rolle, inntektType, belop, valgt, datoFom, datoTil, inntekter), ISoknadsbarn {

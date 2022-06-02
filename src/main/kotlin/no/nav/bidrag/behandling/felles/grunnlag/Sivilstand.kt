@@ -7,7 +7,7 @@ import java.time.LocalDate
 class Sivilstand(
   override val rolle: Rolle,
   datoFom: LocalDate,
-  datoTil: LocalDate,
+  datoTil: LocalDate?,
   val sivilstandKode: SivilstandKode,
   val beskrivelse: String
 ) :

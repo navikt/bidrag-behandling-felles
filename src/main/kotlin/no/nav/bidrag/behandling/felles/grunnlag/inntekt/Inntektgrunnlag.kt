@@ -11,7 +11,7 @@ class Inntektgrunnlag(
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   val periodeFra: LocalDate,
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  val periodeTil: LocalDate,
+  val periodeTil: LocalDate?,
   val aktiv: Boolean,
   val brukFra: LocalDateTime,
   val brukTil: LocalDateTime?,

@@ -4,7 +4,7 @@ import java.time.LocalDate
 
 class BarnetilsynMedStonad(
   datoFom: LocalDate,
-  datoTil: LocalDate,
+  datoTil: LocalDate?,
   override val soknadsbarnId: Int,
   val stonadType: String,
   val tilsynType: String

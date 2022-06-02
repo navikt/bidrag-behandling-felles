@@ -36,3 +36,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.25  | Endret       | GrunnlagReferanseListe endret fra val til var i Delberegning    |
 | 0.0.26  | Endret       | Fjernet `soknadsbarnId` fra Sivilistand                         |
 | 0.0.27  | Endret       | Lagt til Rolle interface                                        |
+| 0.0.28  | Endret       | Gjort datoTil nullable                                          |
