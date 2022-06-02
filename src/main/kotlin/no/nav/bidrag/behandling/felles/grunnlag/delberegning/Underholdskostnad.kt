@@ -14,7 +14,7 @@ class Underholdskostnad(
   val smaabarnstillegg: BigDecimal,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Delberegning<Underholdskostnad>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 

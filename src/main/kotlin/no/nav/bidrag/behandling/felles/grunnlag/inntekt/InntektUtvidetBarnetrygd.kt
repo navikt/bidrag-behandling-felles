@@ -4,11 +4,11 @@ import no.nav.bidrag.behandling.felles.enums.InntektType
 import no.nav.bidrag.behandling.felles.enums.Rolle
 import java.math.BigDecimal
 import java.time.LocalDate
-import java.util.Objects
+import java.util.*
 
 class InntektUtvidetBarnetrygd(
   val isDeltFordel: Boolean, rolle: Rolle, inntektType: InntektType, belop: BigDecimal, valgt: Boolean, datoFom: LocalDate,
-  datoTil: LocalDate, inntekter: List<Inntektgrunnlag>
+  datoTil: LocalDate?, inntekter: List<Inntektgrunnlag>
 ) : Inntekt(rolle, inntektType, belop, valgt, datoFom, datoTil, inntekter) {
 
   override fun equals(o: Any?): Boolean {

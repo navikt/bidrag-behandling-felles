@@ -14,7 +14,7 @@ class MaksBidragPerBarn(
   override val soknadsbarnId: Int,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Delberegning<MaksBidragPerBarn>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 

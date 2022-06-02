@@ -16,7 +16,7 @@ class Bidragsevne(
   val aarligEvne: BigDecimal,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Delberegning<Bidragsevne>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold {
 

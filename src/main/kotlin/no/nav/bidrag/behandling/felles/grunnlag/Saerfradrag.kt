@@ -2,9 +2,9 @@ package no.nav.bidrag.behandling.felles.grunnlag
 
 import no.nav.bidrag.behandling.felles.enums.SaerfradragKode
 import java.time.LocalDate
-import java.util.Objects
+import java.util.*
 
-class Saerfradrag(val saerfradragKode: SaerfradragKode, datoFom: LocalDate, datoTil: LocalDate) :
+class Saerfradrag(val saerfradragKode: SaerfradragKode, datoFom: LocalDate, datoTil: LocalDate?) :
   Periode<Saerfradrag>(datoFom, datoTil), IGrunnlagInnhold {
 
   override fun equals(o: Any?): Boolean {

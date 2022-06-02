@@ -13,7 +13,7 @@ class Tilleggsbidrag(
   override val soknadsbarnId: Int,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Delberegning<Tilleggsbidrag>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 

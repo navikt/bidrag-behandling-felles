@@ -7,7 +7,7 @@ class Samvaersklasse(
   val samvaersklasseId: String,
   val samvaersklasseBeskrivelse: String,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Periode<Samvaersklasse>(datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 

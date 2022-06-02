@@ -15,7 +15,7 @@ class BPsAndelSaertilskudd(
   override val soknadsbarnId: Int,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Delberegning<BPsAndelSaertilskudd>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 

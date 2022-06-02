@@ -9,7 +9,7 @@ class LopendeBidrag(
   val bidragBelop: BigDecimal,
   val samvaersfradragBelop: BigDecimal,
   datoFom: LocalDate,
-  datoTil: LocalDate
+  datoTil: LocalDate?
 ) :
   Periode<LopendeBidrag>(datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
