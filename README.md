@@ -37,5 +37,6 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.26  | Endret       | Fjernet `soknadsbarnId` fra Sivilistand                         |
 | 0.0.27  | Endret       | Lagt til Rolle interface                                        |
 | 0.0.28  | Endret       | Gjort datoTil nullable                                          |
-| 0.0.29  | Endret       | Fjerner saertilskudd fra StonadType                             |
+| 0.0.29  | Endret       | Fjernet SAERTILSKUDD fra StonadType                             |
 | 0.0.30  | Endret       | Lagt til KONTANTSTOTTE som ny GrunnlagRequestType               |
+| 0.0.31  | Endret       | Endret Rolle-enum til å inneholde 2 bokstaver (BP/BM/SB)        |
