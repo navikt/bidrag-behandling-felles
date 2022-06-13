@@ -14,6 +14,6 @@ enum class GrunnlagRequestType {
   EGNE_BARN_I_HUSSTANDEN,
   EGNE_BARN,
   SIVILSTAND,
-  PERSON
+  KONTANTSTOTTE
   ;
 }
