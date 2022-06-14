@@ -40,3 +40,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.29  | Endret       | Fjernet SAERTILSKUDD fra StonadType                             |
 | 0.0.30  | Endret       | Lagt til KONTANTSTOTTE som ny GrunnlagRequestType               |
 | 0.0.31  | Endret       | Endret Rolle-enum til å inneholde 2 bokstaver (BP/BM/SB)        |
+| 0.0.32  | Endret       | Justert litt på Rolle-enum                                      |
