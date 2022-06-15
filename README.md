@@ -42,3 +42,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.31  | Endret       | Endret Rolle-enum til å inneholde 2 bokstaver (BP/BM/SB)        |
 | 0.0.32  | Endret       | Justert litt på Rolle-enum                                      |
 | 0.0.33  | Endret       | Ingen endringer, kun ny versjon                                 |
+| 0.0.34  | Endret       | Ingen endringer, kun ny versjon                                 |
