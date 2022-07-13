@@ -43,3 +43,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.32  | Endret       | Justert litt på Rolle-enum                                      |
 | 0.0.33  | Endret       | Ingen endringer, kun ny versjon                                 |
 | 0.0.34  | Endret       | Ingen endringer, kun ny versjon                                 |
+| 0.0.35  | Endret       | Tatt bort en parameter fra BPsAndelSaertilskudd                 |
