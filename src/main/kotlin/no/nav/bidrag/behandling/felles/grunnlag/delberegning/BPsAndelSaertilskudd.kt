@@ -8,7 +8,6 @@ import java.time.LocalDate
 class BPsAndelSaertilskudd(
   val soktBelop: BigDecimal,
   val beregnetBelop: BigDecimal,
-  val fulltForskuddsBelop: BigDecimal,
   val barnMaksInntektBelop: BigDecimal,
   val fordelKlasseIIbelop: BigDecimal,
   val prosent: Double,
@@ -20,6 +19,6 @@ class BPsAndelSaertilskudd(
   Delberegning<BPsAndelSaertilskudd>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
   override fun isEqualTo(other: BPsAndelSaertilskudd): Boolean {
-    return soktBelop == other.soktBelop && beregnetBelop == other.beregnetBelop && fulltForskuddsBelop == other.fulltForskuddsBelop && barnMaksInntektBelop == other.barnMaksInntektBelop && fordelKlasseIIbelop == other.fordelKlasseIIbelop && prosent == other.prosent && soknadsbarnId == other.soknadsbarnId
+    return soktBelop == other.soktBelop && beregnetBelop == other.beregnetBelop && barnMaksInntektBelop == other.barnMaksInntektBelop && fordelKlasseIIbelop == other.fordelKlasseIIbelop && prosent == other.prosent && soknadsbarnId == other.soknadsbarnId
   }
 }
