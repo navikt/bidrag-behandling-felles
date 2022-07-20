@@ -8,6 +8,7 @@ import java.time.LocalDate
 class Bidragsevne(
   val belop: BigDecimal,
   @field:JsonProperty("25ProsentInntekt") val inntekt25Prosent: BigDecimal,
+  val bostatus: String,
   val antallBarnDeltBosted: Int,
   val isHarFlereSaker: Boolean,
   val isHarFullBidragsevne: Boolean,
@@ -21,7 +22,6 @@ class Bidragsevne(
   Delberegning<Bidragsevne>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold {
 
   override fun isEqualTo(other: Bidragsevne): Boolean {
-    return belop == other.belop && inntekt25Prosent == other.inntekt25Prosent && antallBarnDeltBosted == other.antallBarnDeltBosted && isHarFlereSaker == other.isHarFlereSaker && isHarFullBidragsevne == other.isHarFullBidragsevne && bidragsevneBeskrivelse == other.bidragsevneBeskrivelse && skatt == other.skatt && aarligEvne == aarligEvne
+    return belop == other.belop && inntekt25Prosent == other.inntekt25Prosent && bostatus == other.bostatus && antallBarnDeltBosted == other.antallBarnDeltBosted && isHarFlereSaker == other.isHarFlereSaker && isHarFullBidragsevne == other.isHarFullBidragsevne && bidragsevneBeskrivelse == other.bidragsevneBeskrivelse && skatt == other.skatt && aarligEvne == other.aarligEvne
   }
-
 }
