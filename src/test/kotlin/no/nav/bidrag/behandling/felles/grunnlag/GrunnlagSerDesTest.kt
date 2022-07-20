@@ -83,7 +83,7 @@ class GrunnlagSerDesTest {
     val inntektUtvidetBarnetrygd = InntektUtvidetBarnetrygd(false, Rolle.BIDRAGSPLIKTIG, InntektType.UTVIDET_BARNETRYGD, BigDecimal.valueOf(600000), true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterInntektgrunnlag)
     val skatteInntekt = Inntekt(Rolle.BIDRAGSPLIKTIG, InntektType.SKATTEGRUNNLAG_SKE, BigDecimal.valueOf(600000), true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterSkattegrunnlag)
 
-    val bidragsevne = Bidragsevne(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), 0, false, true, "beskrivelse", BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val bidragsevne = Bidragsevne(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), "Enslig",0, false, true, "beskrivelse", BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val bPsAndelSaertilskudd = BPsAndelSaertilskudd(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), 50.0, 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val bPsAndelUnderholdskostnad = BPsAndelUnderholdskostnad(1, BigDecimal.valueOf(5000), 50.0, false, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val maksBidragPerBarn = MaksBidragPerBarn(2, BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
@@ -176,7 +176,7 @@ class GrunnlagSerDesTest {
     } catch (e: JsonProcessingException) {
       println(e.message)
     }
-    return grunnlagString;
+    return grunnlagString
   }
 
   private fun deserialize(jsonString: String): List<Grunnlag> {
