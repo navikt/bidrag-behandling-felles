@@ -47,3 +47,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.36  | Endret       | Lagt til en parameter til Bidragsevne                           |
 | 0.0.37  | Endret       | Delvis reversert forrige endring                                |
 | 0.0.38  | Endret       | Legger til barnetilsyn i grunnlagstype                          |
+| 0.0.39  | Endret       | Endret verdier i VedtakType                                     |
