@@ -53,7 +53,8 @@ class Grunnlag(
       JsonSubTypes.Type(value = Gebyrfritak::class, name = GrunnlagType.GrunnlagTypeConstants.GEBYRFRITAK),
       JsonSubTypes.Type(value = Inntekt::class, name = GrunnlagType.GrunnlagTypeConstants.INNTEKT),
       JsonSubTypes.Type(value = InntektBarn::class, name = GrunnlagType.GrunnlagTypeConstants.INNTEKT_BARN),
-      JsonSubTypes.Type(value = InntektUtvidetBarnetrygd::class, name = GrunnlagType.GrunnlagTypeConstants.INNTEKT_UTVIDET_BARNETRYGD)
+      JsonSubTypes.Type(value = InntektUtvidetBarnetrygd::class, name = GrunnlagType.GrunnlagTypeConstants.INNTEKT_UTVIDET_BARNETRYGD),
+      JsonSubTypes.Type(value = SoknadInfo::class, name = GrunnlagType.GrunnlagTypeConstants.SOKNAD_INFO)
     ]
   )
   val innhold: IGrunnlagInnhold) {}
