@@ -49,3 +49,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.38  | Endret       | Legger til barnetilsyn i grunnlagstype                          |
 | 0.0.39  | Endret       | Endret verdier i VedtakType                                     |
 | 0.0.40  | Endret       | Lagt til nytt grunnlagsobjekt SoknadInfo                        |
+| 0.0.41  | Endret       | Justert litt på delberegningsobjekt MaksBidragPerBarn           |
