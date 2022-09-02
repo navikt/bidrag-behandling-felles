@@ -47,12 +47,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Override vulnerable version of snakeyaml -->
-      <dependency>
-        <groupId>org.yaml</groupId>
-        <artifactId>snakeyaml</artifactId>
-        <version>1.31</version>
-      </dependency>
       <!-- Force transient versions of kotlin to be the same version -->
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
