@@ -33,9 +33,6 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-    <!-- dependencies -->
-    <bidrag-beregn-felles.version>0.18.2</bidrag-beregn-felles.version>
   </properties>
 
   <distributionManagement>
