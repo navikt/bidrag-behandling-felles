@@ -51,7 +51,7 @@ class GrunnlagSerDesTest {
   }
 
   @Test
-  fun TestGrunnlagSerdes() {
+  fun testGrunnlagSerdes() {
 
     val barn = Barn(Rolle.SOKNADSBARN, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(2022, Month.JANUARY, 31), 1)
     val barnetillegg = Barnetillegg(Rolle.BIDRAGSMOTTAKER, 1, BigDecimal.valueOf(1500), BigDecimal.valueOf(0.3), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
