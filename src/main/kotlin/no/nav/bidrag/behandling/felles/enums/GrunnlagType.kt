@@ -35,7 +35,8 @@ enum class GrunnlagType(val value: String) {
   BPS_ANDEL_SAERTILSKUDD(GrunnlagTypeConstants.BPS_ANDEL_SAERTILSKUDD),
   MAKS_GRENSE_25_INNTEKT(GrunnlagTypeConstants.MAKS_GRENSE_25_INNTEKT),
   GEBYRFRITAK(GrunnlagTypeConstants.GEBYRFRITAK),
-  SOKNAD_INFO(GrunnlagTypeConstants.SOKNAD_INFO);
+  SOKNAD_INFO(GrunnlagTypeConstants.SOKNAD_INFO),
+  BARN_INFO(GrunnlagTypeConstants.BARN_INFO);
 
   object GrunnlagTypeConstants {
     const val SAERFRADRAG = "SAERFRADRAG"
@@ -70,5 +71,6 @@ enum class GrunnlagType(val value: String) {
     const val MAKS_GRENSE_25_INNTEKT = "MAKS_GRENSE_25_INNTEKT"
     const val GEBYRFRITAK = "GEBYRFRITAK"
     const val SOKNAD_INFO = "SOKNAD_INFO"
+    const val BARN_INFO = "BARN_INFO"
   }
 }

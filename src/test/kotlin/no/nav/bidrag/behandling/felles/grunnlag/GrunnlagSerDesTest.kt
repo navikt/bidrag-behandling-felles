@@ -57,7 +57,8 @@ class GrunnlagSerDesTest {
     val barnetillegg = Barnetillegg(Rolle.BIDRAGSMOTTAKER, 1, BigDecimal.valueOf(1500), BigDecimal.valueOf(0.3), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val barnetilleggForsvaret = BarnetilleggForsvaret(true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val barnetilsynMedStonad = BarnetilsynMedStonad(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, StonadType.BIDRAG.name, "tilsyn")
-    val barnIHusstand = BarnIHusstand(1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val barnIHusstand = BarnIHusstand(1.0, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val barnInfo = BarnInfo("12345678910", "Navn Navnesen", true, 1.0, true)
     val bostatus = Bostatus(Rolle.SOKNADSBARN, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), BostatusKode.MED_FORELDRE, 1)
     val bostatusBP = BostatusBP(BostatusKode.ALENE, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val deltBosted = DeltBosted(1, false, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
@@ -71,8 +72,8 @@ class GrunnlagSerDesTest {
     val sivilstand = Sivilstand(Rolle.BIDRAGSPLIKTIG, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), SivilstandKode.ENSLIG, "beskrivelse")
     val sjablon = Sjablon("navn", "verdi", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val skatteklasse = Skatteklasse(1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
-    val soknadsbarnInfo = SoknadsbarnInfo(1, LocalDate.of(2020, Month.JANUARY, 25),"12345678910")
     val soknadInfo = SoknadInfo(LocalDate.of(2020, Month.JANUARY, 25))
+    val soknadsbarnInfo = SoknadsbarnInfo(1, LocalDate.of(2020, Month.JANUARY, 25),"12345678910")
 
     val inntekterInntektgrunnlag = listOf(Inntektgrunnlag("12345678910", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), true, LocalDateTime.now(), null, LocalDateTime.now(), listOf(
       InntektgrunnlagPost("periode", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), "", "", "", "", "", BigDecimal.valueOf(25000), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
@@ -128,6 +129,7 @@ class GrunnlagSerDesTest {
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.TILLEGGSBIDRAG, tilleggsbidrag))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.UNDERHOLDSKOSTNAD, underholdskostnad))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.SOKNAD_INFO, soknadInfo))
+    grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.BARN_INFO, barnInfo))
 
 
     val grunnlagAsString = serialize(grunnlagListe)
@@ -169,6 +171,7 @@ class GrunnlagSerDesTest {
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is Tilleggsbidrag}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is Underholdskostnad}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is SoknadInfo}.size)
+    assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is BarnInfo}.size)
 
   }
 
