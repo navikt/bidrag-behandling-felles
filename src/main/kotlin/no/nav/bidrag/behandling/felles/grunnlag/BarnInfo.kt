@@ -7,7 +7,7 @@ class BarnInfo(
   val datoTil: LocalDate?,
   val fnr: String,
   val navn: String,
-  val erSoknadsbarn: Boolean,
+  val medIBeregning: Boolean,
   val andelForsorget: Double,
   val harSammeAdresseSomBP: Boolean
 ) : IGrunnlagInnhold {}
