@@ -58,7 +58,7 @@ class GrunnlagSerDesTest {
     val barnetilleggForsvaret = BarnetilleggForsvaret(true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val barnetilsynMedStonad = BarnetilsynMedStonad(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, StonadType.BIDRAG.name, "tilsyn")
     val barnIHusstand = BarnIHusstand(1.0, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
-    val barnInfo = BarnInfo("12345678910", "Navn Navnesen", true, 1.0, true)
+    val barnInfo = BarnInfo(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31),"12345678910", "Navn Navnesen", true, 1.0, true)
     val bostatus = Bostatus(Rolle.SOKNADSBARN, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), BostatusKode.MED_FORELDRE, 1)
     val bostatusBP = BostatusBP(BostatusKode.ALENE, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val deltBosted = DeltBosted(1, false, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))

@@ -52,3 +52,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.41  | Endret       | Justert litt på delberegningsobjekt MaksBidragPerBarn                              |
 | 0.0.42  | Endret       | Fjernet unødvendige avhengigheter                                                  |
 | 0.0.43  | Endret       | Endret antall i BarnIHusstand til Double og lagt til nytt grunnlagsobjekt BarnInfo |
+| 0.0.44  | Endret       | Lagt til datoFra/datoTil på grunnlagsobjekt BarnInfo                               |
