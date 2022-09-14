@@ -9,5 +9,5 @@ class BarnInfo(
   val navn: String,
   val medIBeregning: Boolean,
   val andelForsorget: Double,
-  val harSammeAdresseSomBP: Boolean
+  val harSammeAdresse: Boolean
 ) : IGrunnlagInnhold {}
