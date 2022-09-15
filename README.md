@@ -56,3 +56,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.45  | Endret       | Liten endring på grunnlagsobjekt BarnInfo                                          |
 | 0.0.46  | Endret       | Liten endring på grunnlagsobjekt BarnInfo                                          |
 | 0.0.47  | Endret       | Lagt til harFullBidragsevne true/false på delberegningsobjekt BPsAndelSaertilskudd |
+| 0.0.48  | Endret       | Lagt til nye grunnlagsobjekter PersonInfo og SaksbehandlerInfo                     |
