@@ -11,6 +11,7 @@ class BPsAndelSaertilskudd(
   val barnMaksInntektBelop: BigDecimal,
   val fordelKlasseIIbelop: BigDecimal,
   val prosent: Double,
+  val harFullBidragsevne: Boolean,
   override val soknadsbarnId: Int,
   grunnlagReferanseListe: List<String>,
   datoFom: LocalDate,
@@ -19,6 +20,8 @@ class BPsAndelSaertilskudd(
   Delberegning<BPsAndelSaertilskudd>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
   override fun isEqualTo(other: BPsAndelSaertilskudd): Boolean {
-    return soktBelop == other.soktBelop && beregnetBelop == other.beregnetBelop && barnMaksInntektBelop == other.barnMaksInntektBelop && fordelKlasseIIbelop == other.fordelKlasseIIbelop && prosent == other.prosent && soknadsbarnId == other.soknadsbarnId
+    return soktBelop == other.soktBelop && beregnetBelop == other.beregnetBelop && barnMaksInntektBelop == other.barnMaksInntektBelop &&
+        fordelKlasseIIbelop == other.fordelKlasseIIbelop && prosent == other.prosent && harFullBidragsevne == other.harFullBidragsevne &&
+        soknadsbarnId == other.soknadsbarnId
   }
 }
