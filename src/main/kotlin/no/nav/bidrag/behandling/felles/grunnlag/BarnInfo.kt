@@ -6,7 +6,7 @@ class BarnInfo(
   val datoFom: LocalDate,
   val datoTil: LocalDate?,
   val fnr: String,
-  val navn: String,
+  val navn: String?,
   val medIBeregning: Boolean,
   val andelForsorget: Double,
   val harSammeAdresse: Boolean
