@@ -60,3 +60,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.49  | Endret       | Åpnet for at navn er nullable i diverse grunnlagsobjekter                          |
 | 0.0.49  | Endret       | Åpnet for at navn er nullable i diverse grunnlagsobjekter                          |
 | 0.0.50  | Endret       | Nye gebyrenums for engangsbeløptyper                                               |
+| 0.0.51  | Endret       | Retter navn                                                                        |         
