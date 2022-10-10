@@ -58,3 +58,5 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.47  | Endret       | Lagt til harFullBidragsevne true/false på delberegningsobjekt BPsAndelSaertilskudd |
 | 0.0.48  | Endret       | Lagt til nye grunnlagsobjekter PersonInfo og SaksbehandlerInfo                     |
 | 0.0.49  | Endret       | Åpnet for at navn er nullable i diverse grunnlagsobjekter                          |
+| 0.0.49  | Endret       | Åpnet for at navn er nullable i diverse grunnlagsobjekter                          |
+| 0.0.50  | Endret       | Nye gebyrenums for engangsbeløptyper                                               |
