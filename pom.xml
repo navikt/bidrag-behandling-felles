@@ -3,7 +3,7 @@
 
   <groupId>no.nav.bidrag</groupId>
   <artifactId>bidrag-behandling-felles</artifactId>
-  <version>0.0.52</version>
+  <version>0.0.53-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>bidrag-behandling-felles</name>
   <description>Inneholder enums, konstanter og funksjonalitet som er felles for flere repositories ifbm behandling av bidrag</description>
