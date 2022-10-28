@@ -7,9 +7,16 @@ import java.time.LocalDate
 import java.util.*
 
 class InntektUtvidetBarnetrygd(
-  val isDeltFordel: Boolean, rolle: Rolle, inntektType: InntektType, belop: BigDecimal, valgt: Boolean, datoFom: LocalDate,
-  datoTil: LocalDate?, inntekter: List<Inntektgrunnlag>
-) : Inntekt(rolle, inntektType, belop, valgt, datoFom, datoTil, inntekter) {
+  val isDeltFordel: Boolean,
+  rolle: Rolle,
+  inntektType: InntektType,
+  belop: BigDecimal,
+  gjelderAar: String,
+  valgt: Boolean,
+  datoFom: LocalDate,
+  datoTil: LocalDate?,
+  inntekter: List<Inntektgrunnlag>
+) : Inntekt(rolle, inntektType, belop, gjelderAar, valgt, datoFom, datoTil, inntekter) {
 
   override fun equals(o: Any?): Boolean {
     if (this === o) return true

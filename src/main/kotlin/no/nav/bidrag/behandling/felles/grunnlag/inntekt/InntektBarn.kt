@@ -11,12 +11,13 @@ class InntektBarn(
   rolle: Rolle,
   inntektType: InntektType,
   belop: BigDecimal,
+  gjelderAar: String,
   valgt: Boolean,
   datoFom: LocalDate,
   datoTil: LocalDate?,
   inntekter: List<IInntektGrunnlag>
 ) :
-  Inntekt(rolle, inntektType, belop, valgt, datoFom, datoTil, inntekter), ISoknadsbarn {
+  Inntekt(rolle, inntektType, belop, gjelderAar, valgt, datoFom, datoTil, inntekter), ISoknadsbarn {
 
   override fun isEqualTo(other: Inntekt): Boolean {
     if (other is InntektBarn) {
