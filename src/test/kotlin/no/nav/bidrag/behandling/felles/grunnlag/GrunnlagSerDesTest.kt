@@ -82,10 +82,10 @@ class GrunnlagSerDesTest {
     )))
     val inntekterSkattegrunnlag = listOf(Skattegrunnlag("12345678910", 2022, listOf(SkattegrunnlagPost(InntektType.SKATTEGRUNNLAG_SKE.name, BigDecimal.valueOf(15000)))))
 
-    val inntekt = Inntekt(Rolle.BIDRAGSPLIKTIG, InntektType.LONN_TREKK, BigDecimal.valueOf(600000), true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), emptyList())
-    val inntektBarn = InntektBarn(1, Rolle.SOKNADSBARN, InntektType.LONN_TREKK, BigDecimal.valueOf(600000), true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterInntektgrunnlag)
-    val inntektUtvidetBarnetrygd = InntektUtvidetBarnetrygd(false, Rolle.BIDRAGSPLIKTIG, InntektType.UTVIDET_BARNETRYGD, BigDecimal.valueOf(600000), true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterInntektgrunnlag)
-    val skatteInntekt = Inntekt(Rolle.BIDRAGSPLIKTIG, InntektType.SKATTEGRUNNLAG_SKE, BigDecimal.valueOf(600000), true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterSkattegrunnlag)
+    val inntekt = Inntekt(Rolle.BIDRAGSPLIKTIG, InntektType.LONN_TREKK, BigDecimal.valueOf(600000), "2022", true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), emptyList())
+    val inntektBarn = InntektBarn(1, Rolle.SOKNADSBARN, InntektType.LONN_TREKK, BigDecimal.valueOf(600000), "2022", true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterInntektgrunnlag)
+    val inntektUtvidetBarnetrygd = InntektUtvidetBarnetrygd(false, Rolle.BIDRAGSPLIKTIG, InntektType.UTVIDET_BARNETRYGD, BigDecimal.valueOf(600000), "2022", true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterInntektgrunnlag)
+    val skatteInntekt = Inntekt(Rolle.BIDRAGSPLIKTIG, InntektType.SKATTEGRUNNLAG_SKE, BigDecimal.valueOf(600000), "2022", true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), inntekterSkattegrunnlag)
 
     val bidragsevne = Bidragsevne(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), 0, false, true, "beskrivelse", BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val bPsAndelSaertilskudd = BPsAndelSaertilskudd(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), 50.0, true, 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))

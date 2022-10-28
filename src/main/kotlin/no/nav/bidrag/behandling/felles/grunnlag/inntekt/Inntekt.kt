@@ -16,6 +16,7 @@ open class Inntekt(
   override val rolle: Rolle,
   val inntektType: InntektType,
   val belop: BigDecimal,
+  val gjelderAar: String,
   val valgt: Boolean,
   datoFom: LocalDate,
   datoTil: LocalDate?,
@@ -28,15 +29,15 @@ open class Inntekt(
     if (this === o) return true
     if (o == null || javaClass != o.javaClass) return false
     val inntekt = o as Inntekt
-    return valgt == inntekt.valgt && rolle === inntekt.rolle && inntektType == inntekt.inntektType && belop == inntekt.belop && datoFom == inntekt.datoFom && datoTil == inntekt.datoTil
+    return valgt == inntekt.valgt && rolle === inntekt.rolle && inntektType == inntekt.inntektType && belop == inntekt.belop && gjelderAar == inntekt.gjelderAar && datoFom == inntekt.datoFom && datoTil == inntekt.datoTil
   }
 
   override fun hashCode(): Int {
-    return Objects.hash(rolle, inntektType, belop, valgt)
+    return Objects.hash(rolle, inntektType, belop, gjelderAar, valgt)
   }
 
   override fun isEqualTo(other: Inntekt): Boolean {
-    return rolle == other.rolle && inntektType == other.inntektType && belop == other.belop && valgt == other.valgt
+    return rolle == other.rolle && inntektType == other.inntektType && belop == other.belop && gjelderAar == other.gjelderAar && valgt == other.valgt
   }
 
 }
