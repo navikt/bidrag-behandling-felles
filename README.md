@@ -63,3 +63,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.51  | Endret       | Retter navn                                                                        |
 | 0.0.52  | Endret       | Legge til nye StonadTyper                                                          |
 | 0.0.53  | Endret       | Lagt til gjelderAar på Inntekt-objektet                                            |
+| 0.0.54  | Endret       | Lagt til IKKE_ANGITT som gyldig verdi i Skolealder og TilsynType                   |
