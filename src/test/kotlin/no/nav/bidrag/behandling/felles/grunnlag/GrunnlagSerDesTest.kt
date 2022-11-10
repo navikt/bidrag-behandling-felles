@@ -54,7 +54,7 @@ class GrunnlagSerDesTest {
   fun testGrunnlagSerdes() {
 
     val barn = Barn(Rolle.SOKNADSBARN, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(2022, Month.JANUARY, 31), 1)
-    val barnetillegg = Barnetillegg(Rolle.BIDRAGSMOTTAKER, 1, BigDecimal.valueOf(1500), BigDecimal.valueOf(0.3), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val barnetillegg = Barnetillegg(Rolle.BIDRAGSMOTTAKER, 1, BigDecimal.valueOf(1500), BigDecimal.valueOf(0.3), "OFF", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val barnetilleggForsvaret = BarnetilleggForsvaret(true, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val barnetilsynMedStonad = BarnetilsynMedStonad(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, StonadType.BIDRAG.name, "tilsyn")
     val barnIHusstand = BarnIHusstand(1.0, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
