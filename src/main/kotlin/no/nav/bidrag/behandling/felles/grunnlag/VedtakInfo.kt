@@ -7,11 +7,11 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer
 import java.time.LocalDate
 
-class SoknadInfo(
+class VedtakInfo(
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   @JsonSerialize(using = LocalDateSerializer::class)
   @JsonDeserialize(using = LocalDateDeserializer::class)
-  val soknadDato: LocalDate,
-  val soktFraDato: LocalDate,
-  val soknadId: String
+  val virkningDato: LocalDate,
+  val vedtakDato: LocalDate,
+  val kodeVirkningAarsak: String
 ) : IGrunnlagInnhold

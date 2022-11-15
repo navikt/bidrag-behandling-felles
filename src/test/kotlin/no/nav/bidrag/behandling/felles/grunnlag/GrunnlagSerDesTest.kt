@@ -74,8 +74,9 @@ class GrunnlagSerDesTest {
     val sivilstand = Sivilstand(Rolle.BIDRAGSPLIKTIG, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), SivilstandKode.ENSLIG, "beskrivelse")
     val sjablon = Sjablon("navn", "verdi", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val skatteklasse = Skatteklasse(1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
-    val soknadInfo = SoknadInfo(LocalDate.of(2020, Month.JANUARY, 25))
+    val soknadInfo = SoknadInfo(LocalDate.of(2020, Month.JANUARY, 25), LocalDate.of(2020, Month.JANUARY, 25), "12345678")
     val soknadsbarnInfo = SoknadsbarnInfo(1, LocalDate.of(2020, Month.JANUARY, 25),"12345678910")
+    val vedtakInfo = VedtakInfo(LocalDate.of(2020, Month.JANUARY, 25), LocalDate.of(2020, Month.JANUARY, 25), "A")
 
     val inntekterInntektgrunnlag = listOf(Inntektgrunnlag("12345678910", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), true, LocalDateTime.now(), null, LocalDateTime.now(), listOf(
       InntektgrunnlagPost("periode", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), "", "", "", "", "", BigDecimal.valueOf(25000), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
@@ -134,6 +135,7 @@ class GrunnlagSerDesTest {
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.BARN_INFO, barnInfo))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.PERSON_INFO, personInfo))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.SAKSBEHANDLER_INFO, saksbehandlerInfo))
+    grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.VEDTAK_INFO, vedtakInfo))
 
 
     val grunnlagAsString = serialize(grunnlagListe)
@@ -178,6 +180,7 @@ class GrunnlagSerDesTest {
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is BarnInfo}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is PersonInfo}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is SaksbehandlerInfo}.size)
+    assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is VedtakInfo}.size)
 
   }
 
