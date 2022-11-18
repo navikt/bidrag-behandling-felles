@@ -70,7 +70,7 @@ class GrunnlagSerDesTest {
     val personInfo = PersonInfo("12345678910", "Navn Navnesen", Rolle.BIDRAGSMOTTAKER)
     val saerfradrag = Saerfradrag(SaerfradragKode.INGEN, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val saksbehandlerInfo = SaksbehandlerInfo("12345678910", "Navn Navnesen")
-    val samvaersklasse = Samvaersklasse(1, "01", "beskrivelse", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val samvaersklasse = Samvaersklasse(1, "01", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val sivilstand = Sivilstand(Rolle.BIDRAGSPLIKTIG, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), SivilstandKode.ENSLIG, "beskrivelse")
     val sjablon = Sjablon("navn", "verdi", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val skatteklasse = Skatteklasse(1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
