@@ -68,3 +68,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.56  | Endret       | Utvidet SoknadInfo og lagd nytt objekt VedtakInfo                                  |
 | 0.0.57  | Endret       | Endret på objekt BarnetilleggForsvaret                                             |
 | 0.0.58  | Endret       | Endret på objekt Samvaersklasse                                                    |
+| 0.0.58  | Endret       | Gjort vedtakDato på objekt VedtakInfo nullable                                     |
