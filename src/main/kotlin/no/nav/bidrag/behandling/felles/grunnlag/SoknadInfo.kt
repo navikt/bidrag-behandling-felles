@@ -12,6 +12,6 @@ class SoknadInfo(
   @JsonSerialize(using = LocalDateSerializer::class)
   @JsonDeserialize(using = LocalDateDeserializer::class)
   val soknadDato: LocalDate,
-  val soktFraDato: LocalDate,
+  val soktFraDato: LocalDate?,
   val soknadId: String
 ) : IGrunnlagInnhold
