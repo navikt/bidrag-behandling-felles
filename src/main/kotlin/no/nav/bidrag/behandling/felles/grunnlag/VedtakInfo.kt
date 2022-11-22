@@ -12,6 +12,6 @@ class VedtakInfo(
   @JsonSerialize(using = LocalDateSerializer::class)
   @JsonDeserialize(using = LocalDateDeserializer::class)
   val virkningDato: LocalDate,
-  val vedtakDato: LocalDate,
+  val vedtakDato: LocalDate?,
   val kodeVirkningAarsak: String
 ) : IGrunnlagInnhold
