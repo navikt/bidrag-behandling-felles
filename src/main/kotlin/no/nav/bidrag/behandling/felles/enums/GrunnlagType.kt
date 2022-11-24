@@ -39,7 +39,8 @@ enum class GrunnlagType(val value: String) {
   BARN_INFO(GrunnlagTypeConstants.BARN_INFO),
   PERSON_INFO(GrunnlagTypeConstants.PERSON_INFO),
   SAKSBEHANDLER_INFO(GrunnlagTypeConstants.SAKSBEHANDLER_INFO),
-  VEDTAK_INFO(GrunnlagTypeConstants.VEDTAK_INFO);
+  VEDTAK_INFO(GrunnlagTypeConstants.VEDTAK_INFO),
+  INNBETALT_BELOP(GrunnlagTypeConstants.INNBETALT_BELOP);
 
   object GrunnlagTypeConstants {
     const val SAERFRADRAG = "SAERFRADRAG"
@@ -78,5 +79,6 @@ enum class GrunnlagType(val value: String) {
     const val PERSON_INFO = "PERSON_INFO"
     const val SAKSBEHANDLER_INFO = "SAKSBEHANDLER_INFO"
     const val VEDTAK_INFO = "VEDTAK_INFO"
+    const val INNBETALT_BELOP = "INNBETALT_BELOP"
   }
 }
