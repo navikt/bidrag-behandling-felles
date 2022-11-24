@@ -71,3 +71,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.59  | Endret       | Gjort vedtakDato på objekt VedtakInfo nullable                                     |
 | 0.0.60  | Endret       | Gjort soktFraDato på objekt SoknadInfo nullable                                    |
 | 0.0.61  | Endret       | Lagt til OPPFOSTRINGSBIDRAG i StonadType                                           |
+| 0.0.62  | Endret       | Lagt til nytt grunnlagsobjekt InnbetaltBelop. Justert på objekt BarnInfo           |
