@@ -59,7 +59,8 @@ class Grunnlag(
       JsonSubTypes.Type(value = PersonInfo::class, name = GrunnlagType.GrunnlagTypeConstants.PERSON_INFO),
       JsonSubTypes.Type(value = SaksbehandlerInfo::class, name = GrunnlagType.GrunnlagTypeConstants.SAKSBEHANDLER_INFO),
       JsonSubTypes.Type(value = VedtakInfo::class, name = GrunnlagType.GrunnlagTypeConstants.VEDTAK_INFO),
-      JsonSubTypes.Type(value = InnbetaltBelop::class, name = GrunnlagType.GrunnlagTypeConstants.INNBETALT_BELOP)
+      JsonSubTypes.Type(value = InnbetaltBelop::class, name = GrunnlagType.GrunnlagTypeConstants.INNBETALT_BELOP),
+      JsonSubTypes.Type(value = ForholdsmessigFordeling::class, name = GrunnlagType.GrunnlagTypeConstants.FORHOLDSMESSIG_FORDELING)
     ]
   )
   val innhold: IGrunnlagInnhold) {}
