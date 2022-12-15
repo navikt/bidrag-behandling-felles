@@ -8,7 +8,7 @@ class ForholdsmessigFordeling(
   val fnrBarn: String,
   datoFom: LocalDate,
   datoTil: LocalDate?,
-  val datoBeregnet: LocalDate,
+  val datoBeregnet: LocalDate?,
   val samvaersfradragBelop: BigDecimal,
   val beregnetBidragBelop: BigDecimal,
   val endeligBidragBelop: BigDecimal,
