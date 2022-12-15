@@ -73,3 +73,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.61  | Endret       | Lagt til OPPFOSTRINGSBIDRAG i StonadType                                           |
 | 0.0.62  | Endret       | Lagt til nytt grunnlagsobjekt InnbetaltBelop. Justert på objekt BarnInfo           |
 | 0.0.63  | Endret       | Lagt til nytt grunnlagsobjekt ForholdsmessigFordeling                              |
+| 0.0.64  | Endret       | Justert litt på grunnlagsobjekt ForholdsmessigFordeling                            |
