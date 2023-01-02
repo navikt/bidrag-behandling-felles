@@ -9,7 +9,7 @@ class BPsAndelSaertilskudd(
   val soktBelop: BigDecimal,
   val beregnetBelop: BigDecimal,
   val barnMaksInntektBelop: BigDecimal,
-  val fordelKlasseIIbelop: BigDecimal,
+  val fordelKlasseIIBelop: BigDecimal,
   val prosent: Double,
   val harFullBidragsevne: Boolean,
   override val soknadsbarnId: Int,
@@ -21,7 +21,7 @@ class BPsAndelSaertilskudd(
 
   override fun isEqualTo(other: BPsAndelSaertilskudd): Boolean {
     return soktBelop == other.soktBelop && beregnetBelop == other.beregnetBelop && barnMaksInntektBelop == other.barnMaksInntektBelop &&
-        fordelKlasseIIbelop == other.fordelKlasseIIbelop && prosent == other.prosent && harFullBidragsevne == other.harFullBidragsevne &&
+        fordelKlasseIIBelop == other.fordelKlasseIIBelop && prosent == other.prosent && harFullBidragsevne == other.harFullBidragsevne &&
         soknadsbarnId == other.soknadsbarnId
   }
 }
