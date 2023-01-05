@@ -76,3 +76,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.64  | Endret       | Justert litt på grunnlagsobjekt ForholdsmessigFordeling                            |
 | 0.0.65  | Endret       | Rettet en skrivefeil                                                               |
 | 0.0.66  | Endret       | Ny enum VedtakKilde på vedtak, justert verdier for VedtakType                      |
+| 0.0.67  | Endret       | Ny enum Innkreving for vedtak                                                      |
