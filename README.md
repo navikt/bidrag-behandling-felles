@@ -79,3 +79,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.67  | Endret       | Ny enum Innkreving for vedtak                                                      |
 | 0.0.68  | Endret       | Nye verdier for VedtakType                                                         |
 | 0.0.69  | Endret       | Ny enum BehandlingsrefType                                                         |
+| 0.0.70  | Endret       | Endret navn på enum til BehandlingsrefKilde                                        |
