@@ -2,5 +2,5 @@ package no.nav.bidrag.behandling.felles.enums
 
 enum class BehandlingsrefKilde {
   BISYS_SOKNAD,            // Søknadsid fra Bisys
-  KLAGE_OPPRINNELIG_VEDTAK // For klage: Vedtaksid i bidrag-vedtak for det opprinnelige vedtaket som det klages på
+  BISYS_KLAGE_REF_SOKNAD   // For klage: Bisys søknadsid til den opprinnelige søknaden det klages på
 }
