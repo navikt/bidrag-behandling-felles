@@ -21,6 +21,7 @@ import no.nav.bidrag.behandling.felles.grunnlag.delberegning.MaksBidragPerBarn
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.MaksGrense25Inntekt
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.NettoBarnetilsyn
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Samvaersfradrag
+import no.nav.bidrag.behandling.felles.grunnlag.delberegning.SluttberegningBBM
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Tilleggsbidrag
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Underholdskostnad
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.IInntektGrunnlag
@@ -99,6 +100,7 @@ class GrunnlagSerDesTest {
     val samvaersfradrag = Samvaersfradrag(1, BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val tilleggsbidrag = Tilleggsbidrag(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), false, 2, 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val underholdskostnad = Underholdskostnad(1, BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), "alderKode", false, BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val sluttberegningBBM = SluttberegningBBM(1, BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), "resultatKode", listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
 
     val grunnlagListe: MutableList<Grunnlag> = mutableListOf()
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.BARN, barn))
@@ -140,6 +142,7 @@ class GrunnlagSerDesTest {
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.VEDTAK_INFO, vedtakInfo))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.INNBETALT_BELOP, innbetaltBelop))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.FORHOLDSMESSIG_FORDELING, forholdsmessigFordeling))
+    grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.SLUTTBEREGNING_BBM, sluttberegningBBM))
 
 
     val grunnlagAsString = serialize(grunnlagListe)
@@ -187,6 +190,7 @@ class GrunnlagSerDesTest {
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is VedtakInfo}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is InnbetaltBelop}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is ForholdsmessigFordeling}.size)
+    assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is SluttberegningBBM}.size)
 
   }
 

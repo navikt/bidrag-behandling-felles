@@ -10,6 +10,7 @@ import no.nav.bidrag.behandling.felles.grunnlag.delberegning.MaksBidragPerBarn
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.MaksGrense25Inntekt
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.NettoBarnetilsyn
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Samvaersfradrag
+import no.nav.bidrag.behandling.felles.grunnlag.delberegning.SluttberegningBBM
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Tilleggsbidrag
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Underholdskostnad
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Inntekt
@@ -60,7 +61,8 @@ class Grunnlag(
       JsonSubTypes.Type(value = SaksbehandlerInfo::class, name = GrunnlagType.GrunnlagTypeConstants.SAKSBEHANDLER_INFO),
       JsonSubTypes.Type(value = VedtakInfo::class, name = GrunnlagType.GrunnlagTypeConstants.VEDTAK_INFO),
       JsonSubTypes.Type(value = InnbetaltBelop::class, name = GrunnlagType.GrunnlagTypeConstants.INNBETALT_BELOP),
-      JsonSubTypes.Type(value = ForholdsmessigFordeling::class, name = GrunnlagType.GrunnlagTypeConstants.FORHOLDSMESSIG_FORDELING)
+      JsonSubTypes.Type(value = ForholdsmessigFordeling::class, name = GrunnlagType.GrunnlagTypeConstants.FORHOLDSMESSIG_FORDELING),
+      JsonSubTypes.Type(value = SluttberegningBBM::class, name = GrunnlagType.GrunnlagTypeConstants.SLUTTBEREGNING_BBM)
     ]
   )
   val innhold: IGrunnlagInnhold) {}
