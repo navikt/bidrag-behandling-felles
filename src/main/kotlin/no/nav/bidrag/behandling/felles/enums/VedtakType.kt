@@ -9,5 +9,6 @@ enum class VedtakType {
   FASTSETTELSE,
   INNKREVING,
   KLAGE,
-  ENDRING
+  ENDRING,
+  ENDRING_MOTTAKER
 }
