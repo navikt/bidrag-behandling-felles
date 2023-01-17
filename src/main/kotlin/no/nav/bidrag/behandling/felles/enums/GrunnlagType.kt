@@ -42,7 +42,8 @@ enum class GrunnlagType(val value: String) {
   VEDTAK_INFO(GrunnlagTypeConstants.VEDTAK_INFO),
   INNBETALT_BELOP(GrunnlagTypeConstants.INNBETALT_BELOP),
   FORHOLDSMESSIG_FORDELING(GrunnlagTypeConstants.FORHOLDSMESSIG_FORDELING),
-  SLUTTBEREGNING_BBM(GrunnlagTypeConstants.SLUTTBEREGNING_BBM);
+  SLUTTBEREGNING_BBM(GrunnlagTypeConstants.SLUTTBEREGNING_BBM),
+  KLAGE_STATISTIKK(GrunnlagTypeConstants.KLAGE_STATISTIKK);
 
   object GrunnlagTypeConstants {
     const val SAERFRADRAG = "SAERFRADRAG"
@@ -84,5 +85,6 @@ enum class GrunnlagType(val value: String) {
     const val INNBETALT_BELOP = "INNBETALT_BELOP"
     const val FORHOLDSMESSIG_FORDELING = "FORHOLDSMESSIG_FORDELING"
     const val SLUTTBEREGNING_BBM = "SLUTTBEREGNING_BBM"
+    const val KLAGE_STATISTIKK = "KLAGE_STATISTIKK"
   }
 }

@@ -66,6 +66,7 @@ class GrunnlagSerDesTest {
     val faktiskUtgift = FaktiskUtgift(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, BigDecimal.valueOf(1234))
     val forpleiningUtgift = ForpleiningUtgift(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, BigDecimal.valueOf(4321))
     val gebyrfritak = Gebyrfritak(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(2022, Month.MARCH, 1), true, "kode", BigDecimal.valueOf(432), Rolle.BIDRAGSPLIKTIG)
+    val klageStatistikk = KlageStatistikk(LocalDate.of(2022, Month.JANUARY, 1), "AA", "BB", "CC")
     val lopendeBidrag = LopendeBidrag(1, BigDecimal.valueOf(1000), BigDecimal.valueOf(900), BigDecimal.valueOf(800),LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val nettoSaertilskudd = NettoSaertilskudd(BigDecimal.valueOf(1200), 1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val personInfo = PersonInfo("12345678910", "Navn Navnesen", Rolle.BIDRAGSMOTTAKER)
@@ -143,6 +144,7 @@ class GrunnlagSerDesTest {
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.INNBETALT_BELOP, innbetaltBelop))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.FORHOLDSMESSIG_FORDELING, forholdsmessigFordeling))
     grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.SLUTTBEREGNING_BBM, sluttberegningBBM))
+    grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.KLAGE_STATISTIKK, klageStatistikk))
 
 
     val grunnlagAsString = serialize(grunnlagListe)
@@ -191,6 +193,7 @@ class GrunnlagSerDesTest {
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is InnbetaltBelop}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is ForholdsmessigFordeling}.size)
     assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is SluttberegningBBM}.size)
+    assertEquals(1, deserializedGrunnlag.filter { grunnlag ->  grunnlag.innhold is KlageStatistikk}.size)
 
   }
 

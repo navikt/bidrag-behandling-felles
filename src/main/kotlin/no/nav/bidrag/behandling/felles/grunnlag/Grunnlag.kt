@@ -62,8 +62,10 @@ class Grunnlag(
       JsonSubTypes.Type(value = VedtakInfo::class, name = GrunnlagType.GrunnlagTypeConstants.VEDTAK_INFO),
       JsonSubTypes.Type(value = InnbetaltBelop::class, name = GrunnlagType.GrunnlagTypeConstants.INNBETALT_BELOP),
       JsonSubTypes.Type(value = ForholdsmessigFordeling::class, name = GrunnlagType.GrunnlagTypeConstants.FORHOLDSMESSIG_FORDELING),
-      JsonSubTypes.Type(value = SluttberegningBBM::class, name = GrunnlagType.GrunnlagTypeConstants.SLUTTBEREGNING_BBM)
+      JsonSubTypes.Type(value = SluttberegningBBM::class, name = GrunnlagType.GrunnlagTypeConstants.SLUTTBEREGNING_BBM),
+      JsonSubTypes.Type(value = KlageStatistikk::class, name = GrunnlagType.GrunnlagTypeConstants.KLAGE_STATISTIKK)
     ]
   )
-  val innhold: IGrunnlagInnhold) {}
+  val innhold: IGrunnlagInnhold
+) {}
 
