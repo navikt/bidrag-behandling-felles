@@ -66,7 +66,7 @@ class GrunnlagSerDesTest {
     val faktiskUtgift = FaktiskUtgift(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, BigDecimal.valueOf(1234))
     val forpleiningUtgift = ForpleiningUtgift(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), 1, BigDecimal.valueOf(4321))
     val gebyrfritak = Gebyrfritak(LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(2022, Month.MARCH, 1), true, "kode", BigDecimal.valueOf(432), Rolle.BIDRAGSPLIKTIG)
-    val klageStatistikk = KlageStatistikk(LocalDate.of(2022, Month.JANUARY, 1), "AA", "BB", "CC")
+    val klageStatistikk = KlageStatistikk("AA", "BB")
     val lopendeBidrag = LopendeBidrag(1, BigDecimal.valueOf(1000), BigDecimal.valueOf(900), BigDecimal.valueOf(800),LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val nettoSaertilskudd = NettoSaertilskudd(BigDecimal.valueOf(1200), 1, LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val personInfo = PersonInfo("12345678910", "Navn Navnesen", Rolle.BIDRAGSMOTTAKER)

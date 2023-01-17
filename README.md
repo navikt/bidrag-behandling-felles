@@ -84,3 +84,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.72  | Endret       | Ny delberegning SluttberegningBBM                                                  |
 | 0.0.73  | Endret       | Ny verdi for VedtakType - endre mottaker                                           |
 | 0.0.74  | Endret       | Lagt til nytt grunnlagsobjekt KlageStatistikk                                      |
+| 0.0.75  | Endret       | Endret grunnlagsobjekt KlageStatistikk                                             |
