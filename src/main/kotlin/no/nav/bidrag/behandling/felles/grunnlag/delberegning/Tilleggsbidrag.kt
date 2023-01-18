@@ -8,6 +8,8 @@ import java.time.LocalDate
 class Tilleggsbidrag(
   val grenseBidrag: BigDecimal,
   val prosentBidrag: BigDecimal,
+  val inntektBPBelop: BigDecimal,
+  val bidragBelop: BigDecimal,
   val isAvslag: Boolean,
   val antallTrinn: Int,
   override val soknadsbarnId: Int,
@@ -18,6 +20,7 @@ class Tilleggsbidrag(
   Delberegning<Tilleggsbidrag>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
   override fun isEqualTo(other: Tilleggsbidrag): Boolean {
-    return grenseBidrag == other.grenseBidrag && prosentBidrag == other.prosentBidrag && isAvslag == other.isAvslag && antallTrinn == other.antallTrinn
+    return grenseBidrag == other.grenseBidrag && prosentBidrag == other.prosentBidrag && inntektBPBelop == other.inntektBPBelop &&
+        bidragBelop == other.bidragBelop && isAvslag == other.isAvslag && antallTrinn == other.antallTrinn
   }
 }

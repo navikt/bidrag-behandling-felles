@@ -99,7 +99,7 @@ class GrunnlagSerDesTest {
     val maksGrense25Inntekt = MaksGrense25Inntekt(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val nettoBarnetilsyn = NettoBarnetilsyn(1, BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val samvaersfradrag = Samvaersfradrag(1, BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
-    val tilleggsbidrag = Tilleggsbidrag(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), false, 2, 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
+    val tilleggsbidrag = Tilleggsbidrag(BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), false, 2, 1, listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val underholdskostnad = Underholdskostnad(1, BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), "alderKode", false, BigDecimal.valueOf(1000), listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
     val sluttberegningBBM = SluttberegningBBM(1, BigDecimal.valueOf(1000), BigDecimal.valueOf(1000), "resultatKode", listOf("referanse1", "referanse2"), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))
 
