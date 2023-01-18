@@ -85,4 +85,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.73  | Endret       | Ny verdi for VedtakType - endre mottaker                                           |
 | 0.0.74  | Endret       | Lagt til nytt grunnlagsobjekt KlageStatistikk                                      |
 | 0.0.75  | Endret       | Endret grunnlagsobjekt KlageStatistikk                                             |
-| 0.0.76  | Endret       | Utvidet delbergeningsobjekt Tilleggsbidrag                                         |
+| 0.0.76  | Endret       | Utvidet delberegningsobjekt Tilleggsbidrag                                         |
