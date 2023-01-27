@@ -86,3 +86,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.74  | Endret       | Lagt til nytt grunnlagsobjekt KlageStatistikk                                      |
 | 0.0.75  | Endret       | Endret grunnlagsobjekt KlageStatistikk                                             |
 | 0.0.76  | Endret       | Utvidet delberegningsobjekt Tilleggsbidrag                                         |
+| 0.0.77  | Endret       | Fjernet selvforsørget-indikator fra delbergening BPsAndelUnderholdskostnad         |
