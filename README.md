@@ -88,3 +88,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.76  | Endret       | Utvidet delberegningsobjekt Tilleggsbidrag                                         |
 | 0.0.77  | Endret       | Fjernet selvforsørget-indikator fra delbergening BPsAndelUnderholdskostnad         |
 | 0.0.78  | Endret       | Utvidet grunnlagsobjekt ForholdsmessigFordeling                                    |
+| 0.0.79  | Endret       | Justert grunnlagsobjekt ForholdsmessigFordeling                                    |

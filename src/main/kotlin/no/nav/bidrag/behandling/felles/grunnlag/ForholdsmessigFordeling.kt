@@ -12,7 +12,6 @@ class ForholdsmessigFordeling(
   val sakId: String,
   val fiktivSakId: String,
   val fnrBarn: String,
-  val datoBeregnet: LocalDate?,
   val samvaersfradragBelop: BigDecimal,
   val beregnetBidragBelop: BigDecimal,
   val endeligBidragBelop: BigDecimal,
@@ -22,6 +21,5 @@ class ForholdsmessigFordeling(
 
   override fun isEqualTo(other: ForholdsmessigFordeling): Boolean {
     return soknadTypeKode == other.soknadTypeKode && datoSoknad == other.datoSoknad && sakId == other.sakId && fnrBarn == other.fnrBarn
-        && datoBeregnet == other.datoBeregnet
   }
 }
