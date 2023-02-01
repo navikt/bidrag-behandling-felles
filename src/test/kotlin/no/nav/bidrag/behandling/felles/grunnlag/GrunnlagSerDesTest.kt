@@ -80,7 +80,7 @@ class GrunnlagSerDesTest {
     val soknadsbarnInfo = SoknadsbarnInfo(1, LocalDate.of(2020, Month.JANUARY, 25),"12345678910")
     val vedtakInfo = VedtakInfo(LocalDate.of(2020, Month.JANUARY, 25), LocalDate.of(2020, Month.JANUARY, 25), "A")
     val innbetaltBelop = InnbetaltBelop(1, BigDecimal.valueOf(1000))
-    val forholdsmessigFordeling = ForholdsmessigFordeling("1", "12345678901", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), LocalDate.of(2022, Month.JANUARY, 1), BigDecimal.valueOf(0), BigDecimal.valueOf(5000), BigDecimal.valueOf(3000), "AA", "AA")
+    val forholdsmessigFordeling = ForholdsmessigFordeling(LocalDate.of(2022, Month.JANUARY, 1),LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), "FO", LocalDate.of(2022, Month.JANUARY, 1), "1", "N", "12345678901", LocalDate.of(2022, Month.JANUARY, 1), BigDecimal.valueOf(0), BigDecimal.valueOf(5000), BigDecimal.valueOf(3000), "AA", "AA")
 
     val inntekterInntektgrunnlag = listOf(Inntektgrunnlag("12345678910", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), true, LocalDateTime.now(), null, LocalDateTime.now(), listOf(
       InntektgrunnlagPost("periode", LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31), "", "", "", "", "", BigDecimal.valueOf(25000), LocalDate.of(2022, Month.JANUARY, 1), LocalDate.of(9999, Month.DECEMBER, 31))

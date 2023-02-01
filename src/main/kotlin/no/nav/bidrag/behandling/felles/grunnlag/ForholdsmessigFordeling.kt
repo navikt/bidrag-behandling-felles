@@ -4,10 +4,14 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class ForholdsmessigFordeling(
-  val sakId: String,
-  val fnrBarn: String,
+  val justerFomDato: LocalDate,
   datoFom: LocalDate,
   datoTil: LocalDate?,
+  val soknadTypeKode: String,
+  val datoSoknad: LocalDate,
+  val sakId: String,
+  val fiktivSakId: String,
+  val fnrBarn: String,
   val datoBeregnet: LocalDate?,
   val samvaersfradragBelop: BigDecimal,
   val beregnetBidragBelop: BigDecimal,
@@ -17,8 +21,7 @@ class ForholdsmessigFordeling(
 ) : Periode<ForholdsmessigFordeling>(datoFom, datoTil), IGrunnlagInnhold {
 
   override fun isEqualTo(other: ForholdsmessigFordeling): Boolean {
-    return sakId == other.sakId && fnrBarn == other.fnrBarn && datoBeregnet == other.datoBeregnet && samvaersfradragBelop == other.samvaersfradragBelop
-        && beregnetBidragBelop == other.beregnetBidragBelop && endeligBidragBelop == other.endeligBidragBelop && resultatkode == other.resultatkode
-        && status == other.status
+    return soknadTypeKode == other.soknadTypeKode && datoSoknad == other.datoSoknad && sakId == other.sakId && fnrBarn == other.fnrBarn
+        && datoBeregnet == other.datoBeregnet
   }
 }
