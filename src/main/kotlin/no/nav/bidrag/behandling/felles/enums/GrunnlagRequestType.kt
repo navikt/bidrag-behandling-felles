@@ -15,6 +15,7 @@ enum class GrunnlagRequestType {
   EGNE_BARN,
   SIVILSTAND,
   KONTANTSTOTTE,
-  BARNETILSYN
+  BARNETILSYN,
+  OVERGANGSSTONAD
   ;
 }
