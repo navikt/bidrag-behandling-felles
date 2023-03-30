@@ -1,10 +1,10 @@
 package no.nav.bidrag.behandling.felles.enums.sjablon
 
-enum class SjablonNokkelNavn (val navn: String) {
-  STONAD_TYPE("StønadType"),
-  TILSYN_TYPE("TilsynType"),
-  BOSTATUS("Bostatus"),
-  ALDER_TOM("AlderTOM"),
-  ANTALL_BARN_TOM("AntallBarnTOM"),
-  SAMVAERSKLASSE("Samværsklasse")
+enum class SjablonNokkelNavn(val navn: String) {
+    STONAD_TYPE("StønadType"),
+    TILSYN_TYPE("TilsynType"),
+    BOSTATUS("Bostatus"),
+    ALDER_TOM("AlderTOM"),
+    ANTALL_BARN_TOM("AntallBarnTOM"),
+    SAMVAERSKLASSE("Samværsklasse")
 }

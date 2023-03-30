@@ -6,20 +6,19 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class Underholdskostnad(
-  override val soknadsbarnId: Int,
-  val belop: BigDecimal,
-  val beregnetBelop: BigDecimal,
-  val skolealderKode: String,
-  val manueltJustertSmaabarnstillegg: Boolean,
-  val smaabarnstillegg: BigDecimal,
-  grunnlagReferanseListe: List<String>,
-  datoFom: LocalDate,
-  datoTil: LocalDate?
+    override val soknadsbarnId: Int,
+    val belop: BigDecimal,
+    val beregnetBelop: BigDecimal,
+    val skolealderKode: String,
+    val manueltJustertSmaabarnstillegg: Boolean,
+    val smaabarnstillegg: BigDecimal,
+    grunnlagReferanseListe: List<String>,
+    datoFom: LocalDate,
+    datoTil: LocalDate?
 ) :
-  Delberegning<Underholdskostnad>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
+    Delberegning<Underholdskostnad>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
-  override fun isEqualTo(other: Underholdskostnad): Boolean {
-    return soknadsbarnId == other.soknadsbarnId && belop == other.belop
-  }
-
+    override fun isEqualTo(other: Underholdskostnad): Boolean {
+        return soknadsbarnId == other.soknadsbarnId && belop == other.belop
+    }
 }
