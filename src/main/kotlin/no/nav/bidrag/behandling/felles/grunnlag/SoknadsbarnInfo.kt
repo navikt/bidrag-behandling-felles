@@ -8,9 +8,10 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer
 import java.time.LocalDate
 
 class SoknadsbarnInfo(
-  override val soknadsbarnId: Int,
-  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-  @JsonSerialize(using = LocalDateSerializer::class)
-  @JsonDeserialize(using = LocalDateDeserializer::class)
-  val fodselsdato: LocalDate,
-  val fnr: String) : IGrunnlagInnhold, ISoknadsbarn {}
+    override val soknadsbarnId: Int,
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonSerialize(using = LocalDateSerializer::class)
+    @JsonDeserialize(using = LocalDateDeserializer::class)
+    val fodselsdato: LocalDate,
+    val fnr: String
+) : IGrunnlagInnhold, ISoknadsbarn

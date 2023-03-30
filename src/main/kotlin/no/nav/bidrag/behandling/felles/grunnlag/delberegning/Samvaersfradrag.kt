@@ -6,16 +6,15 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class Samvaersfradrag(
-  override val soknadsbarnId: Int,
-  val belop: BigDecimal,
-  grunnlagReferanseListe: List<String>,
-  datoFom: LocalDate,
-  datoTil: LocalDate?
+    override val soknadsbarnId: Int,
+    val belop: BigDecimal,
+    grunnlagReferanseListe: List<String>,
+    datoFom: LocalDate,
+    datoTil: LocalDate?
 ) :
-  Delberegning<Samvaersfradrag>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
+    Delberegning<Samvaersfradrag>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
-  override fun isEqualTo(other: Samvaersfradrag): Boolean {
-    return soknadsbarnId == other.soknadsbarnId && belop == other.belop
-  }
-
+    override fun isEqualTo(other: Samvaersfradrag): Boolean {
+        return soknadsbarnId == other.soknadsbarnId && belop == other.belop
+    }
 }

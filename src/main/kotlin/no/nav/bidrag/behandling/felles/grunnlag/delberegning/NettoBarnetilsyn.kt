@@ -6,16 +6,15 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class NettoBarnetilsyn(
-  override val soknadsbarnId: Int,
-  val belop: BigDecimal,
-  grunnlagReferanseListe: List<String>,
-  datoFom: LocalDate,
-  datoTil: LocalDate?
+    override val soknadsbarnId: Int,
+    val belop: BigDecimal,
+    grunnlagReferanseListe: List<String>,
+    datoFom: LocalDate,
+    datoTil: LocalDate?
 ) :
-  Delberegning<NettoBarnetilsyn>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
+    Delberegning<NettoBarnetilsyn>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
-  override fun isEqualTo(other: NettoBarnetilsyn): Boolean {
-    return soknadsbarnId == other.soknadsbarnId && belop == other.belop
-  }
-
+    override fun isEqualTo(other: NettoBarnetilsyn): Boolean {
+        return soknadsbarnId == other.soknadsbarnId && belop == other.belop
+    }
 }

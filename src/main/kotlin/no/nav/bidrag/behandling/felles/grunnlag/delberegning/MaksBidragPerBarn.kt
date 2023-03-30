@@ -6,17 +6,17 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class MaksBidragPerBarn(
-  val maksBelop: BigDecimal,
-  val beregnetBelop: BigDecimal,
-  val justertBelop: BigDecimal,
-  override val soknadsbarnId: Int,
-  grunnlagReferanseListe: List<String>,
-  datoFom: LocalDate,
-  datoTil: LocalDate?
+    val maksBelop: BigDecimal,
+    val beregnetBelop: BigDecimal,
+    val justertBelop: BigDecimal,
+    override val soknadsbarnId: Int,
+    grunnlagReferanseListe: List<String>,
+    datoFom: LocalDate,
+    datoTil: LocalDate?
 ) :
-  Delberegning<MaksBidragPerBarn>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
+    Delberegning<MaksBidragPerBarn>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
-  override fun isEqualTo(other: MaksBidragPerBarn): Boolean {
-    return maksBelop == other.maksBelop && beregnetBelop == other.beregnetBelop && justertBelop == other.justertBelop
-  }
+    override fun isEqualTo(other: MaksBidragPerBarn): Boolean {
+        return maksBelop == other.maksBelop && beregnetBelop == other.beregnetBelop && justertBelop == other.justertBelop
+    }
 }

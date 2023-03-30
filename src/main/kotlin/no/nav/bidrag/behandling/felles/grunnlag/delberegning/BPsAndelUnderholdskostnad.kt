@@ -6,17 +6,16 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 class BPsAndelUnderholdskostnad(
-  override val soknadsbarnId: Int,
-  val belop: BigDecimal,
-  val prosent: Double,
-  grunnlagReferanseListe: List<String>,
-  datoFom: LocalDate,
-  datoTil: LocalDate?
+    override val soknadsbarnId: Int,
+    val belop: BigDecimal,
+    val prosent: Double,
+    grunnlagReferanseListe: List<String>,
+    datoFom: LocalDate,
+    datoTil: LocalDate?
 ) :
-  Delberegning<BPsAndelUnderholdskostnad>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
+    Delberegning<BPsAndelUnderholdskostnad>(grunnlagReferanseListe, datoFom, datoTil), IGrunnlagInnhold, ISoknadsbarn {
 
-  override fun isEqualTo(other: BPsAndelUnderholdskostnad): Boolean {
-    return soknadsbarnId == other.soknadsbarnId && belop == other.belop && prosent == other.prosent
-  }
-
+    override fun isEqualTo(other: BPsAndelUnderholdskostnad): Boolean {
+        return soknadsbarnId == other.soknadsbarnId && belop == other.belop && prosent == other.prosent
+    }
 }
