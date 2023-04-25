@@ -90,3 +90,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.78  | Endret       | Utvidet grunnlagsobjekt ForholdsmessigFordeling                                    |
 | 0.0.79  | Endret       | Justert grunnlagsobjekt ForholdsmessigFordeling                                    |
 | 0.0.80  | Endret       | Overgangsstønad lagt til i GrunnlagRequestType                                     |
+| 0.0.81  | Endret       | Lagt inn alle sivilstandkoder som støttes av PDL + Samboer                         |
