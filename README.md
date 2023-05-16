@@ -92,3 +92,4 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.80  | Endret       | Overgangsstønad lagt til i GrunnlagRequestType                                       |
 | 0.0.81  | Endret       | Lagt inn alle sivilstandkoder som støttes av PDL + Samboer                           |
 | 0.0.82  | Endret       | Endret slik at den kun er én GrunnlagRequestType for husstandsmedlemmer og egne barn |
+| 0.0.83  | Endret       | Lagt til nytt grunnlagsobjekt Kapitalinntekt                                         |

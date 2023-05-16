@@ -13,6 +13,7 @@ enum class GrunnlagType(val value: String) {
     INNTEKT(GrunnlagTypeConstants.INNTEKT),
     INNTEKT_BARN(GrunnlagTypeConstants.INNTEKT_BARN),
     INNTEKT_UTVIDET_BARNETRYGD(GrunnlagTypeConstants.INNTEKT_UTVIDET_BARNETRYGD),
+    KAPITALINNTEKT(GrunnlagTypeConstants.KAPITALINNTEKT),
     NETTO_SAERTILSKUDD(GrunnlagTypeConstants.NETTO_SAERTILSKUDD),
     SAMVAERSKLASSE(GrunnlagTypeConstants.SAMVAERSKLASSE),
     BIDRAGSEVNE(GrunnlagTypeConstants.BIDRAGSEVNE),
@@ -55,6 +56,7 @@ enum class GrunnlagType(val value: String) {
         const val INNTEKT = "INNTEKT"
         const val INNTEKT_BARN = "INNTEKT_BARN"
         const val INNTEKT_UTVIDET_BARNETRYGD = "INNTEKT_UTVIDET_BARNETRYGD"
+        const val KAPITALINNTEKT = "KAPITALINNTEKT"
         const val NETTO_SAERTILSKUDD = "NETTO_SAERTILSKUDD"
         const val SAMVAERSKLASSE = "SAMVAERSKLASSE"
         const val BIDRAGSEVNE = "BIDRAGSEVNE"
