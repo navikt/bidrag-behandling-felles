@@ -30,6 +30,7 @@ import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektBarn
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektUtvidetBarnetrygd
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Inntektgrunnlag
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektgrunnlagPost
+import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Kapitalinntekt
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Skattegrunnlag
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.SkattegrunnlagPost
 import java.math.BigDecimal
@@ -245,6 +246,17 @@ class GrunnlagSerDesTest {
             LocalDate.of(9999, Month.DECEMBER, 31),
             inntekterSkattegrunnlag
         )
+        val kapitalinntekt = Kapitalinntekt(
+            Rolle.BIDRAGSPLIKTIG,
+            InntektType.KAPITALINNTEKT_EGNE_OPPLYSNINGER,
+            BigDecimal.valueOf(600000),
+            "2022",
+            true,
+            LocalDate.of(2022, Month.JANUARY, 1),
+            LocalDate.of(9999, Month.DECEMBER, 31),
+            inntekterInntektgrunnlag,
+            listOf("referanse1")
+        )
 
         val bidragsevne = Bidragsevne(
             BigDecimal.valueOf(1000),
@@ -369,6 +381,7 @@ class GrunnlagSerDesTest {
         grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.INNTEKT, skatteInntekt))
         grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.INNTEKT_BARN, inntektBarn))
         grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.INNTEKT_UTVIDET_BARNETRYGD, inntektUtvidetBarnetrygd))
+        grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.KAPITALINNTEKT, kapitalinntekt))
         grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.BIDRAGSEVNE, bidragsevne))
         grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.BPS_ANDEL_SAERTILSKUDD, bPsAndelSaertilskudd))
         grunnlagListe.add(Grunnlag("Referanse", GrunnlagType.BPS_ANDEL_UNDERHOLDSKOSTNAD, bPsAndelUnderholdskostnad))
@@ -413,11 +426,12 @@ class GrunnlagSerDesTest {
         assertEquals(1, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Sjablon }.size)
         assertEquals(1, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Skatteklasse }.size)
         assertEquals(1, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is SoknadsbarnInfo }.size)
-        assertEquals(4, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Inntekt }.size)
+        assertEquals(5, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Inntekt }.size)
+        assertEquals(1, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Kapitalinntekt }.size)
         val inntektGrunnlag: List<IInntektGrunnlag> =
             deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Inntekt }
                 .flatMap { grunnlag -> (grunnlag.innhold as Inntekt).inntekter }
-        assertEquals(2, inntektGrunnlag.filter { inntektsgrunnlag -> inntektsgrunnlag is Inntektgrunnlag }.size)
+        assertEquals(3, inntektGrunnlag.filter { inntektsgrunnlag -> inntektsgrunnlag is Inntektgrunnlag }.size)
         assertEquals(1, inntektGrunnlag.filter { inntektsgrunnlag -> inntektsgrunnlag is Skattegrunnlag }.size)
         assertEquals(1, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is Bidragsevne }.size)
         assertEquals(1, deserializedGrunnlag.filter { grunnlag -> grunnlag.innhold is BPsAndelSaertilskudd }.size)
