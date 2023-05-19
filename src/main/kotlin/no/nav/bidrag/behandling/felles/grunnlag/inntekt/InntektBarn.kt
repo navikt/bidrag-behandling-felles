@@ -6,7 +6,7 @@ import no.nav.bidrag.behandling.felles.grunnlag.ISoknadsbarn
 import java.math.BigDecimal
 import java.time.LocalDate
 
-class InntektBarn(
+open class InntektBarn(
     override val soknadsbarnId: Int,
     rolle: Rolle,
     inntektType: InntektType,
