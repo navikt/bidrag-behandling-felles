@@ -17,6 +17,7 @@ import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Inntekt
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektBarn
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektUtvidetBarnetrygd
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Kapitalinntekt
+import no.nav.bidrag.behandling.felles.grunnlag.inntekt.KapitalinntektBarn
 
 class Grunnlag(
     val referanse: String,
@@ -57,6 +58,7 @@ class Grunnlag(
             JsonSubTypes.Type(value = InntektBarn::class, name = GrunnlagType.GrunnlagTypeConstants.INNTEKT_BARN),
             JsonSubTypes.Type(value = InntektUtvidetBarnetrygd::class, name = GrunnlagType.GrunnlagTypeConstants.INNTEKT_UTVIDET_BARNETRYGD),
             JsonSubTypes.Type(value = Kapitalinntekt::class, name = GrunnlagType.GrunnlagTypeConstants.KAPITALINNTEKT),
+            JsonSubTypes.Type(value = KapitalinntektBarn::class, name = GrunnlagType.GrunnlagTypeConstants.KAPITALINNTEKT_BARN),
             JsonSubTypes.Type(value = SoknadInfo::class, name = GrunnlagType.GrunnlagTypeConstants.SOKNAD_INFO),
             JsonSubTypes.Type(value = BarnInfo::class, name = GrunnlagType.GrunnlagTypeConstants.BARN_INFO),
             JsonSubTypes.Type(value = PersonInfo::class, name = GrunnlagType.GrunnlagTypeConstants.PERSON_INFO),
