@@ -94,3 +94,5 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.82  | Endret       | Endret slik at den kun er én GrunnlagRequestType for husstandsmedlemmer og egne barn |
 | 0.0.83  | Endret       | Lagt til nytt grunnlagsobjekt Kapitalinntekt                                         |
 | 0.0.84  | Endret       | Lagt til nytt grunnlagsobjekt KapitalinntektBarn                                     |
+| 0.0.85  | Endret       | Arbeidsforhold lagt til i GrunnlagRequestType                                        |
+

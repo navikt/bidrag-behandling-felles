@@ -14,6 +14,7 @@ enum class GrunnlagRequestType {
     SIVILSTAND,
     KONTANTSTOTTE,
     BARNETILSYN,
-    OVERGANGSSTONAD
+    OVERGANGSSTONAD,
+    ARBEIDSFORHOLD
     ;
 }
