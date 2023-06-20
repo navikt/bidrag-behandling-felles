@@ -7,13 +7,6 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.KotlinModule
 import com.fasterxml.jackson.module.kotlin.readValue
-import no.nav.bidrag.behandling.felles.enums.BostatusKode
-import no.nav.bidrag.behandling.felles.enums.GrunnlagType
-import no.nav.bidrag.behandling.felles.enums.InntektType
-import no.nav.bidrag.behandling.felles.enums.Rolle
-import no.nav.bidrag.behandling.felles.enums.SaerfradragKode
-import no.nav.bidrag.behandling.felles.enums.SivilstandKode
-import no.nav.bidrag.behandling.felles.enums.StonadType
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.BPsAndelSaertilskudd
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.BPsAndelUnderholdskostnad
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Bidragsevne
@@ -34,6 +27,13 @@ import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Kapitalinntekt
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.KapitalinntektBarn
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Skattegrunnlag
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.SkattegrunnlagPost
+import no.nav.bidrag.domain.enums.BostatusKode
+import no.nav.bidrag.domain.enums.GrunnlagType
+import no.nav.bidrag.domain.enums.InntektType
+import no.nav.bidrag.domain.enums.Rolle
+import no.nav.bidrag.domain.enums.SaerfradragKode
+import no.nav.bidrag.domain.enums.SivilstandKode
+import no.nav.bidrag.domain.enums.StonadType
 import java.math.BigDecimal
 import java.time.LocalDate
 import java.time.LocalDateTime

@@ -1,7 +1,7 @@
 package no.nav.bidrag.behandling.felles.grunnlag
 
 import com.fasterxml.jackson.annotation.JsonFormat
-import no.nav.bidrag.behandling.felles.enums.Rolle
+import no.nav.bidrag.domain.enums.Rolle
 import java.math.BigDecimal
 import java.time.LocalDate
 

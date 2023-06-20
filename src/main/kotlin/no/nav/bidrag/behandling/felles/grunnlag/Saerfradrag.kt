@@ -1,6 +1,6 @@
 package no.nav.bidrag.behandling.felles.grunnlag
 
-import no.nav.bidrag.behandling.felles.enums.SaerfradragKode
+import no.nav.bidrag.domain.enums.SaerfradragKode
 import java.time.LocalDate
 import java.util.*
 

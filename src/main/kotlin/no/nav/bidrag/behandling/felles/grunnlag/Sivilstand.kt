@@ -1,7 +1,7 @@
 package no.nav.bidrag.behandling.felles.grunnlag
 
-import no.nav.bidrag.behandling.felles.enums.Rolle
-import no.nav.bidrag.behandling.felles.enums.SivilstandKode
+import no.nav.bidrag.domain.enums.Rolle
+import no.nav.bidrag.domain.enums.SivilstandKode
 import java.time.LocalDate
 
 class Sivilstand(

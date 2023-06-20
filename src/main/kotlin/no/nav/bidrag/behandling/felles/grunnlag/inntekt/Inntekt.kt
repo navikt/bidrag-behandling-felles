@@ -1,12 +1,12 @@
 package no.nav.bidrag.behandling.felles.grunnlag.inntekt
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
-import no.nav.bidrag.behandling.felles.enums.InntektType
-import no.nav.bidrag.behandling.felles.enums.Rolle
 import no.nav.bidrag.behandling.felles.grunnlag.IGrunnlagInnhold
 import no.nav.bidrag.behandling.felles.grunnlag.IRolle
 import no.nav.bidrag.behandling.felles.grunnlag.Periode
 import no.nav.bidrag.behandling.felles.grunnlag.deserializer.InntektDeserializer
+import no.nav.bidrag.domain.enums.InntektType
+import no.nav.bidrag.domain.enums.Rolle
 import java.math.BigDecimal
 import java.time.LocalDate
 import java.util.*
