@@ -1,6 +1,6 @@
 package no.nav.bidrag.behandling.felles.grunnlag
 
-import no.nav.bidrag.behandling.felles.enums.Rolle
+import no.nav.bidrag.domain.enums.Rolle
 
 class PersonInfo(
     val fnr: String,

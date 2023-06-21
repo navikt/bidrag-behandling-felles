@@ -1,8 +1,8 @@
 package no.nav.bidrag.behandling.felles.grunnlag.inntekt
 
 import com.fasterxml.jackson.annotation.JsonInclude
-import no.nav.bidrag.behandling.felles.enums.InntektType
-import no.nav.bidrag.behandling.felles.enums.Rolle
+import no.nav.bidrag.domain.enums.InntektType
+import no.nav.bidrag.domain.enums.Rolle
 import java.math.BigDecimal
 import java.time.LocalDate
 

@@ -2,7 +2,6 @@ package no.nav.bidrag.behandling.felles.grunnlag
 
 import com.fasterxml.jackson.annotation.JsonSubTypes
 import com.fasterxml.jackson.annotation.JsonTypeInfo
-import no.nav.bidrag.behandling.felles.enums.GrunnlagType
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.BPsAndelSaertilskudd
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.BPsAndelUnderholdskostnad
 import no.nav.bidrag.behandling.felles.grunnlag.delberegning.Bidragsevne
@@ -18,6 +17,7 @@ import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektBarn
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.InntektUtvidetBarnetrygd
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.Kapitalinntekt
 import no.nav.bidrag.behandling.felles.grunnlag.inntekt.KapitalinntektBarn
+import no.nav.bidrag.domain.enums.GrunnlagType
 
 class Grunnlag(
     val referanse: String,
