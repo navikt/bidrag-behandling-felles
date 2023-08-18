@@ -96,4 +96,5 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.84  | Endret       | Lagt til nytt grunnlagsobjekt KapitalinntektBarn                                     |
 | 0.0.85  | Endret       | Arbeidsforhold lagt til i GrunnlagRequestType                                        |
 | 0.0.86  | Endret       | Flyttet enums til bidrag-domain                                                      |
+| 0.0.87  | Endret       | Oppgrader bidrag-domain                                                              |
 

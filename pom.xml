@@ -30,7 +30,7 @@
 
     <!-- build -->
     <build-helper-maven.version>3.3.0</build-helper-maven.version>
-    <bidrag-domain.version>20230621111817_df046e8</bidrag-domain.version>
+    <bidrag-domain.version>20230817134109_ada9d45</bidrag-domain.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
