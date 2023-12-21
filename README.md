@@ -6,6 +6,7 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 
 ## release endringer
 
+2023-12-21: Har endret versjonslogikk til å bruke timestamp+hash, så versjonsloggen vil ikke bli oppdatert heretter
 
 | versjon | endringstype | beskrivelse                                                                          |
 |---------|--------------|--------------------------------------------------------------------------------------|
