@@ -99,4 +99,5 @@ Inneholder enums/konstanter og funksjonalitet som er felles for flere repositori
 | 0.0.87  | Endret       | Oppgrader bidrag-domain                                                              |
 | 0.0.88  | Endret       | Oppdatert versjoner                                                                  |
 | 0.0.89  | Endret       | Forsøk på å fikse versjonskrøll ifbm. deploy                                         |
+| 0.0.90  | Endret       | Reversert endringer i deploy.yaml                                                    |
 
